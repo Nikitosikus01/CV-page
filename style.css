@@ -1,0 +1,41 @@
+
+body{
+
+}
+
+header{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+header img{
+    /* display: block; */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+header div{
+    align-content: center;
+
+}
+
+section{
+
+}
+.section_myinfo{
+    
+    /* display: flex;
+    justify-content: space-between;
+    text-align: center; */
+}
+.section_skills{
+
+}
+.section_skills ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
