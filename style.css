@@ -1,35 +1,52 @@
 
 body{
 
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+h2{
+    color: darkgreen;
+    text-align: center;
+    /* position: sticky;
+    top: 0; */
 }
 
 header{
-    background-color: darkgray;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-header img{
-    /* display: block; */
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-
-}
-header div{
-    align-content: center;
+    
 
 }
 
 section{
 
 }
+
+
+.section_ava{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: darkgray;
+    padding: 50px 0px 150px 0px;
+
+}
+.section_ava img{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+.section_ava div{
+
+    margin: 60px 100px;
+}
+
 .section_myinfo{
     
-    /* display: flex;
-    justify-content: space-between;
-    text-align: center; */
+    background-color: darkcyan;
+    height: 400px;
+
 }
 .section_skills{
 
