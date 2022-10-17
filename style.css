@@ -8,14 +8,47 @@ body{
 h2{
     color: darkgreen;
     text-align: center;
-    /* position: sticky;
-    top: 0; */
-}
-
-header{
     
-
 }
+
+header {
+
+    position: sticky;
+    top: 0;
+    
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:none;
+    background-color: aquamarine;    
+    padding: 0;
+    max-height: 120px;
+    
+}
+header ul a {
+    background-color: darkorange;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+}
+/* header ul li {
+    background-color: darkorange;
+    padding: 15px 40px;
+    
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    
+} */
+header ul a:first-child {
+    color: green;
+}
+header ul a:hover {
+    background-color: black;
+}
+
 
 section{
 
