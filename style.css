@@ -9,15 +9,13 @@ body{
 }
 
 h2{
-    background-color: lightgreen;
+    background-color: lightgray;
     padding: 20px 40px;
     color: darkgreen;
     text-align: center;
-    
 }
 
 header {
-
     position: sticky;
     top: 0;
     
@@ -26,7 +24,8 @@ header ul{
     display: flex;
     justify-content:center;
     list-style-type:none;
-    background-color: lightgray;    
+    background-color: gray; 
+       
     padding: 0;
     max-height: 120px;
     
@@ -36,6 +35,9 @@ header ul a {
     padding: 20px 40px;
     text-decoration: none;
     color: black;
+}
+header ul a:hover {
+    background-color: lightgray;
 }
 /* header ul li {
     background-color: darkorange;
@@ -50,38 +52,36 @@ header ul li a {
 /* header ul a:first-child {
     color: black;
 } */
-header ul a:hover {
-    background-color: rgb(255, 230, 0);
-}
-
-
-section{
-
-}
-
 
 .section_ava{
     display: flex;
     justify-content: center;
     text-align: center;
-    /* background-color: darkgray; */
     padding: 50px 0px 150px 0px;
+    background-color: lightgrey;
 }
 .section_ava img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    margin: 60px 50px;
 }
 .section_ava div{
-    margin: 60px 100px;
+    margin: 60px 50px;
+    font-size: 30px;
+    color: green;
 }
 
-.section_myinfo{
-    
-    /* background-color: darkcyan; */
+
+.section_myinfo{    
     height: 400px;
 
 }
+.section_myinfo span:first-child {
+    display: flex;
+}
+
+
 .section_skills{
 
 }
