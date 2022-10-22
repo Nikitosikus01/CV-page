@@ -11,7 +11,7 @@
 
 <body>
     <!-- <section class="main_section"> -->
-        <nav class="navbar">
+        <nav class="navbar" id="Navbar">
             <ul>
                 <!-- сначала меню над хедером, скромное маленькое красивое, но когда листаешь вниз - оно делатся как сейчас -->
 
@@ -21,12 +21,12 @@
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">My projects</a></li> -->
-                <a href="#">Back up <span>🠕🠕🠕</span></a>
-                <a href="#">About me</a>
-                <a href="#">My skills</a>
-                <a href="#">Education</a>
-                <a href="#">Experience</a>
-                <a href="#">My projects</a>
+                <a href="#Navbar">Back up <span>🠕🠕🠕</span></a>
+                <a href="#About_me">About me</a>
+                <a href="#Skills">My skills</a>
+                <a href="#Education">Education</a>
+                <a href="#Experience">Experience</a>
+                <a href="#My_projects">My projects</a>
             </ul>
         </nav>
 
@@ -40,14 +40,14 @@
                     </h1>
                     <h3 style="margin: 0;">a Web Developer</h3>
                 </div>
-                <a href="#">
+                <a href="#About_me">
                     Next <span>⮛</span>
                     <!-- <img src="/img&icon/1.png"> -->
                 </a>
             </div>
         </header>
 
-        <section class="section_myinfo">
+        <section class="section_myinfo" id="About_me">
             <h2>About me</h2>
             <div class="content_width">
                 <div class="section_myinfo_motivation">
@@ -58,13 +58,20 @@
                         I'm looking for my next adventure in Hi-Tech world.
                         And I'm sure that technology can change the world.
                     </p>
-                    <img class="section_myinfo_img" src="/img&icon/motivation_icon.png">
+                    <div class="section_myinfo_motivation_icons">
+
+                        <!-- <img src="/img&icon/bug_virus_icon.png">
+                        <img src="/img&icon/card_memory_icon.png">
+                        <img src="/img&icon/cloud_data_server_icon.png">
+                        <img src="/img&icon/battery_icon.png">
+                        <img src="/img&icon/gear_maintenance_repair_service_icon.png"> -->
+                    </div>
                 </div>
                 <div class="section_myinfo_abilities">    
                     <h3>What can i do?</h3> 
                         <!-- анимация подчёркивания вытекающая в веритикальную черту и далее появляется текст -->
                     <p>
-                            I can ...
+                        I can ...
                         Purposeful, Active & Hardwork person, Sportsman & Helper.
                         I'm fully loaded in motivation to study & learn
                         I'm looking for my next adventure in Hi-Tech world
@@ -73,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="section_skills">
+        <section class="section_skills" id="Skills">
             <h2>My skills</h2>
             <ul class="content_width">
                 <li> 
@@ -97,7 +104,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section_education">
+        <section class="section_education" id="Education">
             <h2>Education</h2>
             <div class="content_width">
                 <p>
@@ -112,7 +119,7 @@
                 </p>
             </div>
         </section>
-        <section class="section_experience">
+        <section class="section_experience" id="Experience">
             <h2>Experience</h2>
             <div class="content_width">
                 <p>
