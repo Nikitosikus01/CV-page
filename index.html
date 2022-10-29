@@ -11,115 +11,118 @@
 
 <body>
     <!-- <section class="main_section"> -->
+        
+
+        <header class="header">
+            <div>
+                <img src="/img&icon/ava.jpg">
+                <h1>
+                    I'M NIKI <br>
+                    A WEB DEVELOPER
+                </h1>
+                <!-- <h1>
+                    I'm Niki <br>
+                    a Web Developer
+                </h1> -->
+            </div>
+            <a href="#About_me">
+                Next <span>⮛</span>
+            </a>
+        </header>
+
         <nav class="navbar" id="Navbar">
             <ul>
-                <!-- сначала меню над хедером, скромное маленькое красивое, но когда листаешь вниз - оно делатся как сейчас -->
-
-                <!-- <li><a href="#">Back up <span>🠕🠕🠕</span></a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">My skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">My projects</a></li> -->
                 <a href="#Navbar">Back up <span>🠕🠕🠕</span></a>
                 <a href="#About_me">About me</a>
                 <a href="#Skills">My skills</a>
-                <a href="#Education">Education</a>
+                <!-- <a href="#Education">Education</a> -->
                 <a href="#Experience">Experience</a>
                 <a href="#My_projects">My projects</a>
             </ul>
         </nav>
 
-        <header>
-            <img src="/img&icon/ava.jpg">
-            <div>
-                <div class="header_content_text">
-                    <h1 style="margin: 0;">
-                        I'm Niki.
-                        <!-- Welcome to my site! -->
-                    </h1>
-                    <h3 style="margin: 0;">a Web Developer</h3>
-                </div>
-                <a href="#About_me">
-                    Next <span>⮛</span>
-                    <!-- <img src="/img&icon/1.png"> -->
-                </a>
-            </div>
-        </header>
-
         <section class="section_myinfo" id="About_me">
             <h2>About me</h2>
             <div class="content_width">
-                <div class="section_myinfo_motivation">
-                    <p>
-                        My name is Nikita Mishkuro.
-                        Purposeful, Active & Hardwork person, Sportsman & Helper.
-                        I'm fully loaded in motivation to study & learn
-                        I'm looking for my next adventure in Hi-Tech world.
-                        And I'm sure that technology can change the world.
-                    </p>
-                    <div class="section_myinfo_motivation_icons">
-
-                        <!-- <img src="/img&icon/bug_virus_icon.png">
-                        <img src="/img&icon/card_memory_icon.png">
-                        <img src="/img&icon/cloud_data_server_icon.png">
-                        <img src="/img&icon/battery_icon.png">
-                        <img src="/img&icon/gear_maintenance_repair_service_icon.png"> -->
+                <container class="">
+                    <div class="section_myinfo_motivation-block">
+                        <p>
+                            <!-- анимация подчёркивания вытекающая в границу фото -->
+                            <span>Who i am?</span><br><br>
+                            I'm Nikita Mishkuro --
+                            Purposeful, Active & Hardwork person, Sportsman & Altruist. <br>
+                            I'm fully loaded in motivation to study & learn.
+                            I'm looking for my next adventure in Hi-Tech world.
+                            And I'm sure that technology can change the world.
+                        </p>
+                        <img src="/img&icon/ava.jpg">
                     </div>
-                </div>
-                <div class="section_myinfo_abilities">    
-                    <h3>What can i do?</h3> 
-                        <!-- анимация подчёркивания вытекающая в веритикальную черту и далее появляется текст -->
-                    <p>
-                        I can ...
-                        Purposeful, Active & Hardwork person, Sportsman & Helper.
-                        I'm fully loaded in motivation to study & learn
-                        I'm looking for my next adventure in Hi-Tech world
-                        And I'
-                    </p>
-                </div>
+                    <div class="section_myinfo_abilities">
+                        <span>What is my soft skills?</span>
+                        <!-- анимация появления текста из картинки с небольшой задержкой -->
+                        <ul>
+                            <li><img src="/img&icon/skills/team.png">Teamwork</li>
+                            <li><img src="/img&icon/skills/communication.png">Communication </li>
+                            <li><img src="/img&icon/skills/flexibility.png">Flexibility</li>
+                            <li><img src="/img&icon/skills/understanding.png">Understanding</li>
+                            <li><img src="/img&icon/skills/sensitivity.png">Sensitivity</li>
+                        </ul>
+                        <ul>
+                            <li>Discipline<img src="/img&icon/skills/discipline.png"></li>
+                            <li><img src="/img&icon/skills/attention.png">Attention to details</li>
+                            <li><img src="/img&icon/skills/gear_maintenance.png">Problem solving</li>
+                            <li><img src="/img&icon/skills/clock.png">Time management and organisation</li>
+                            <li><img src="/img&icon/skills/research.png">Research</li>
+                        </ul>
+                    </div>
+                    <div class="section_myinfo_education">
+                        <span>Education</span>
+                        <div class="">
+                            <p>
+                                // ДОБАВИТЬ НА ФОН ЛОГО МОЖЕТ И ЧЁ-Т ЕЩЁ
+                                2018 - 2022
+                                Minsk State College of Electronics
+                            </p>
+                            <p>    
+                                August 2022 - currently
+                                Course from udemy.com “The Complete JavaScript
+                                + React Course - Zero Result” 
+                            </p>
+                        </div>
+                    </div>
+                </container>
             </div>
         </section>
+
         <section class="section_skills" id="Skills">
             <h2>My skills</h2>
-            <ul class="content_width">
-                <li> 
-                    <!-- <p>можно выделить блок, сделать фон типа разные языки, к тем, что я знаю добавить флаги... </p> -->
-                    <img class="" src="">
-                    <h3>Languages</h3>
-                    <p> English - intermediate
-                        Polish - pre-intermediate </p>
-                </li>
-                <li>
-                    <img class="" src="">
-                    <h3>Pogram</h3>
-                    <p>HTML, CSS, JavaScript, start to learn React, ... </p>
-                </li>
-                <li>
-                    
-                    <img class="" src="">
-                    <h3>Qualities</h3>
-                    <!-- <p>придумать ассоциации для каждого качества</p> -->
-                    <p>optimism, discipline, flexibility, understanding and sensitivity  </p>
-                </li>
-            </ul>
-        </section>
-        <section class="section_education" id="Education">
-            <h2>Education</h2>
             <div class="content_width">
-                <p>
-                    <!-- ДОБАВИТЬ НА ФОН ЛОГО МОЖЕТ И ЧЁ-Т ЕЩЁ -->
-                    2018 - 2022
-                    Minsk State College of Electronics
-                </p>
-                <p>    
-                    August 2022 - currently
-                    Course from udemy.com “The Complete JavaScript
-                    + React Course - Zero Result” 
-                </p>
+                <container class="">
+                    <ul> 
+                        <img class="" src="">
+                        <h3>Languages</h3>
+                        <ul> 
+                            <li>English - intermediate</li>
+                            <li>Polish - pre-intermediate</li>
+                            
+                        </ul>
+                    </ul>
+                    <ul>
+                        <img class="" src="">
+                        <h3>Technologies</h3>
+                        <ul> 
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>...</li>
+                            
+                        </ul>
+                    </ul>
+                </container>
             </div>
         </section>
-        <section class="section_experience" id="Experience">
+        <!-- <section class="section_experience" id="Experience">
             <h2>Experience</h2>
             <div class="content_width">
                 <p>
@@ -137,20 +140,17 @@
                 </p>
                 <p>
                     Other experience 
-
-
                 </p>
             </div>
-        </section>
+        </section> -->
 
-        <section class="section_habits">
+        <!-- <section class="section_habits">
             <div class="content_width">
 
             </div>
-        </section>
+        </section> -->
 
         <footer>
-            <!-- <div class="content_width"> -->
                 <ul>
                     <li>
                         <a href="">Telegram</a>
@@ -165,17 +165,10 @@
                         <a href="">Instagram</a>
                     </li>
 
-                    <!-- <li>
-                        <a href="">GitHub |</a>
-                    </li>
-                    <li>
-                        <a href="">CodeWars |</a>
-                    </li> -->
                 </ul>
                 <p>
                     Warsaw 2022
                 </p>
-            <!-- </div> -->
         </footer>
     <!-- </section> -->
 </body>

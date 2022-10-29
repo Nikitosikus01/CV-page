@@ -1,24 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 
 body{
     display: block;
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-    margin: auto;
+    margin: 0;
     max-width: 100%;
 }
 .content_width{
-    margin: auto;
+    margin: 0 auto;
+    padding: 40px;
     max-width: 70%;
     background-color: pink;
+    box-sizing: border-box;
 }
 h2{
-    /* max-width: 100%; */
-    background-color: lightgray;
-    padding: 20px 40px;
-    margin: 100px 0 0 0;
-    color: green;
+    /* position:; */
+    height: 90px;
+    background: radial-gradient(#2c3e50, #bdc3c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+}
+
+/* section */
+
+.header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(45deg, #bdc3c7, #2c3e50); */
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+.header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0px 100px 0px;
+}
+.header div img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+.header div h1{
+    font-size: 60px;
+    font-family: 'Chango', cursive;
+    
+    
     text-align: center;
-       
+    background: url(/img&icon/pexels-photo-bg.jpeg);    
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: h1_animation 10s infinite linear;;
+}
+@keyframes h1_animation{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+.header a {
+    display: block;
+    width: 100px;
+    /* justify-content: center;
+    text-align: center; */
+    text-decoration: none;
+    color: black;
+    border: solid 3px;
+    border-radius: 5%;
+    padding: 20px 60px;
+}
+.header a:hover{
+    background: url(/img&icon/pexels-photo-h1-bg.jpeg);
+    /* color: white; */
+    border-color: black;
+
 }
 
 /* section */
@@ -26,89 +90,87 @@ h2{
 .navbar{
     position: sticky;
     top: 0;
-    margin: 0;
+
 }
 .navbar ul{
+    max-height: 120px;
+    list-style-type:none;
     display: flex;
     justify-content:center;
-    list-style-type:none;
-    background-color: gray; 
-    padding: 0;
-    max-height: 120px;
+    align-items: center;
+    /* border: solid 3px; */
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px black;
+    margin-bottom: 50px;
+
 }
 .navbar ul a {
-    padding: 20px 40px;
+    padding: 15px 40px;
     text-decoration: none;
     color: black;
+
 }
 .navbar ul a:hover {
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    box-shadow: 0px 0px 2px 3px black inset;
 }
 
 /* section */
 
-header{
+.section_myinfo_motivation-block {
     display: flex;
     justify-content: center;
-    text-align: center;
-    padding: 50px 0px;
-    /* background-color: grey; */
+    padding: 20px 0px 120px 0px;
+    font-size: 22px;
 }
-header img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    margin: 60px 50px;
+.section_myinfo_motivation-block p {
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px;
 }
-header div{
-    margin: 60px 50px;
+.section_myinfo_motivation-block p span {
     font-size: 30px;
-    color: green;
-    display: block;
-    justify-content: space-around;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+.section_myinfo_motivation-block img {
+    height: 300px;
+    width: 300px;
+    border: solid 3px black;
+    border-radius: 50%;
+    margin: 30px;
 }
 
-header div a {
-    text-decoration: none;
-    color: black;
-    border: solid 3px;
-    border-radius: 5%;
-    padding: 10px 30px;
-    margin-top: 50px;
-}
-header div a:hover{
-    background-color: green;
-    color: white;
-    border-color: black;
 
-}
-
-/* section */
-
-.section_myinfo{  
-
-}
-.section_myinfo_motivation {
+.section_myinfo_abilities {
+    margin: 30px;
     display: flex;
-    justify-content: center;
-    padding: 30px 40px;
+    flex-direction: column;
+    text-align: center;
+}
+.section_myinfo_abilities span {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.section_myinfo_abilities ul {
+    list-style-type: none;
     margin: 0;
 }
-.section_myinfo_motivation_icons {
-    float: right;
-    width: 150px;
-    height: 150px;
-    border: 3px solid;
-}
-.section_myinfo_motivation_icons {
-    width: 40px;
-    height: 40px;
-}
-.section_myinfo_abilities {
+.section_myinfo_abilities ul li {
     display: flex;
-    justify-content: center;
-    padding: 30px;
+    align-items: center;
+    font-size: 25px;    
+}
+.section_myinfo_abilities ul:nth-child(3) {
+    color: blue;
+    margin: 0 0 0 auto;
 
+}
+.section_myinfo_abilities ul li img {
+    padding: 15px 30px 15px 20px;
+    height: 52px;
+    width: 52px;
 }
 
 /* section */
@@ -122,7 +184,9 @@ header div a:hover{
     text-align: center;
 }
 
+
 /* section */
+
 
 footer {
 
