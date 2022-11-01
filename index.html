@@ -16,17 +16,18 @@
         <header class="header">
             <div>
                 <img src="/img&icon/ava.jpg">
-                <h1>
+                <!-- <h1>
                     I'M NIKI <br>
                     A WEB DEVELOPER
-                </h1>
-                <!-- <h1>
+                </h1> -->
+                <h1>
                     I'm Niki <br>
                     a Web Developer
-                </h1> -->
+                </h1>
             </div>
             <a href="#About_me">
-                Next <span>⮛</span>
+                Menu 
+                <!-- <span>⮛</span> -->
             </a>
         </header>
 
@@ -34,22 +35,22 @@
             <ul>
                 <a href="#Navbar">Back up <span>🠕🠕🠕</span></a>
                 <a href="#About_me">About me</a>
+                <a href="#Education">Education</a>
                 <a href="#Skills">My skills</a>
-                <!-- <a href="#Education">Education</a> -->
                 <a href="#Experience">Experience</a>
-                <a href="#My_projects">My projects</a>
+                <!-- <a href="#My_projects">My projects</a> -->
             </ul>
         </nav>
 
         <section class="section_myinfo" id="About_me">
-            <h2>About me</h2>
+            <h2><img src="/img&icon/person.png">ABOUT ME</h2>
             <div class="content_width">
                 <container class="">
                     <div class="section_myinfo_motivation-block">
                         <p>
                             <!-- анимация подчёркивания вытекающая в границу фото -->
-                            <span>Who i am?</span><br><br>
-                            I'm Nikita Mishkuro --
+                            <span class="paragraph_name">Who i am?</span><br><br>
+                            I am Nikita Mishkuro --
                             Purposeful, Active & Hardwork person, Sportsman & Altruist. <br>
                             I'm fully loaded in motivation to study & learn.
                             I'm looking for my next adventure in Hi-Tech world.
@@ -58,16 +59,16 @@
                         <img src="/img&icon/ava.jpg">
                     </div>
                     <div class="section_myinfo_abilities">
-                        <span>What is my soft skills?</span>
+                        <span class="paragraph_name">What is my soft skills?</span>
                         <!-- анимация появления текста из картинки с небольшой задержкой -->
-                        <ul>
+                        <ul class="section_myinfo_abilities_socialskills">
                             <li><img src="/img&icon/skills/team.png">Teamwork</li>
                             <li><img src="/img&icon/skills/communication.png">Communication </li>
                             <li><img src="/img&icon/skills/flexibility.png">Flexibility</li>
                             <li><img src="/img&icon/skills/understanding.png">Understanding</li>
                             <li><img src="/img&icon/skills/sensitivity.png">Sensitivity</li>
                         </ul>
-                        <ul>
+                        <ul class="section_myinfo_abilities_personskills">
                             <li>Discipline<img src="/img&icon/skills/discipline.png"></li>
                             <li><img src="/img&icon/skills/attention.png">Attention to details</li>
                             <li><img src="/img&icon/skills/gear_maintenance.png">Problem solving</li>
@@ -75,27 +76,51 @@
                             <li><img src="/img&icon/skills/research.png">Research</li>
                         </ul>
                     </div>
-                    <div class="section_myinfo_education">
-                        <span>Education</span>
-                        <div class="">
-                            <p>
-                                // ДОБАВИТЬ НА ФОН ЛОГО МОЖЕТ И ЧЁ-Т ЕЩЁ
-                                2018 - 2022
-                                Minsk State College of Electronics
-                            </p>
-                            <p>    
-                                August 2022 - currently
-                                Course from udemy.com “The Complete JavaScript
-                                + React Course - Zero Result” 
-                            </p>
-                        </div>
-                    </div>
                 </container>
             </div>
         </section>
-
-        <section class="section_skills" id="Skills">
-            <h2>My skills</h2>
+        <section class="section_education">
+            <h2><img src="/img&icon/education_icon.png">EDUCATION</h2>
+            <div class="content_width">
+                <div class="section_education_content">
+                    <h4>Minsk State College of Electronics</h4>
+                    <h5><img style="height: 28px; width: 28;" src="/img&icon/calendar_icon.png"> 2018 - 2022</h5>
+                    
+                    <h4>Course from udemy.com “The Complete JavaScript
+                        + React Course - Zero Result”</h4>
+                    <h5><img style="height: 28px; width: 28;" src="/img&icon/calendar_icon.png">August 2022 - <span>currently</span></h5>
+                    
+                    <h4>YouTube</h4>
+                    <ul>
+                        <li><a href="https://youtube.com/c/ITKAMASUTRA">IT-KAMASUTRA</a></li>
+                        <li><a href="https://youtube.com/c/UlbiTV">UlbiTV</a></li>
+                        <li><a href="https://youtube.com/c/EduCatterOfficial">EduCatter</a></li>
+                        <li><a href="https://youtube.com/c/VladilenMinin">Владилен Минин</a></li>
+                        <li><a href="https://youtube.com/c/WAYUPIN">WAYUP & Андрей Гаврилов</a></li>
+                    </ul>
+                    <h4>Web pages</h4>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/">w3schools.com</a></li>
+                        <li><a href="https://developer.mozilla.org">developer.mozilla.org</a></li>
+                        <li><a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+                        <li><a href="https://html5book.ru/">html5book.ru</a></li>
+                    </ul>
+                    <h4>Books</h4>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <h5><Picture>Grokaem "Algorithms"</Picture></h5>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h5><Picture>Robert Martin "Clean Code"</Picture></h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section_skills" id="Skills">
+            <h2><img src="/img&icon/pencil.png"> MY SKILLS</h2>
             <div class="content_width">
                 <container class="">
                     <ul> 
@@ -121,9 +146,9 @@
                     </ul>
                 </container>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="section_experience" id="Experience">
-            <h2>Experience</h2>
+            <h2><img src="/img&icon/work_experience.png">EXPERIENCE</h2>
             <div class="content_width">
                 <p>
                     Research Institute of Technical Information
@@ -144,7 +169,7 @@
             </div>
         </section> -->
 
-        <!-- <section class="section_habits">
+        <!-- <section class="section_projects" id="My_projects">
             <div class="content_width">
 
             </div>

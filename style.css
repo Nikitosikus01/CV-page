@@ -3,9 +3,13 @@
 body{
     display: block;
     font-family: 'Comfortaa', cursive;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     max-width: 100%;
+}
+*::selection {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 1);
 }
 .content_width{
     margin: 0 auto;
@@ -15,16 +19,30 @@ body{
     box-sizing: border-box;
 }
 h2{
-    /* position:; */
-    height: 90px;
-    background: radial-gradient(#2c3e50, #bdc3c7);
+    height: 75px;
+    /* background: rgba(0, 0, 0, 0.9); */
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 50px 5px black inset;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
-    color: white;
     margin: 0;
 }
+h2 img {
+    height: 28px;
+    width: 28px;
+    margin-right: 15px;
+}
+.paragraph_name {
+    font-size: 22px;
+
+}
+
 
 /* section */
 
@@ -33,6 +51,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-bottom: 100px; */
     /* background: linear-gradient(45deg, #bdc3c7, #2c3e50); */
     /* background: rgba(0, 0, 0, 0.2); */
 }
@@ -40,24 +59,28 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 0px 100px 0px;
+    margin: 100px 0px;
 }
-.header div img{
-    width: 350px;
-    height: 350px;
+.header div img {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-right: 100px;
+    /* border: 2px solid white; */
 }
+.header div img:hover {
+    /* border: 2px solid black; */
+    transition: linear .5s;
+    box-shadow: 0px 0px 5px 5px ;
+} 
 .header div h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Chango', cursive;
-    
-    
     text-align: center;
     background: url(/img&icon/pexels-photo-bg.jpeg);    
     color: transparent;
     -webkit-background-clip: text;
-    animation: h1_animation 10s infinite linear;;
+    animation: h1_animation 20s infinite linear;
 }
 @keyframes h1_animation{
     from {
@@ -69,20 +92,24 @@ h2{
 }
 .header a {
     display: block;
-    width: 100px;
-    /* justify-content: center;
-    text-align: center; */
+    max-width: 100px;
     text-decoration: none;
-    color: black;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
     border: solid 3px;
     border-radius: 5%;
-    padding: 20px 60px;
+    padding: 15px 50px;
+    margin-bottom: 50px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: .2s linear;
 }
 .header a:hover{
-    background: url(/img&icon/pexels-photo-h1-bg.jpeg);
-    /* color: white; */
-    border-color: black;
-
+    box-shadow: 2px 2px white, 4px 4px #000000;
+    top: -4px;
+    left: -4px;
 }
 
 /* section */
@@ -90,29 +117,31 @@ h2{
 .navbar{
     position: sticky;
     top: 0;
-
+    font-size: 20px;
 }
 .navbar ul{
     max-height: 120px;
     list-style-type:none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    /* border: solid 3px; */
-    background-color: white;
-    box-shadow: 0px 0px 5px 5px black;
-    margin-bottom: 50px;
 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 50px 0px;
 }
 .navbar ul a {
-    padding: 15px 40px;
+    padding: 15px 30px;
     text-decoration: none;
     color: black;
-
+    transition: .4s linear;
+    background: white;
+    /* border-top-left-radius: 10%;
+    border-top-right-radius: 10%; */
 }
 .navbar ul a:hover {
-    /* background-color: lightgray; */
-    box-shadow: 0px 0px 2px 3px black inset;
+    box-shadow: 250px 0 0 0 rgba(0, 0, 0, 0.9) inset;
+    color: white;
 }
 
 /* section */
@@ -121,7 +150,7 @@ h2{
     display: flex;
     justify-content: center;
     padding: 20px 0px 120px 0px;
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 .section_myinfo_motivation-block p {
     margin: 30px;
@@ -129,7 +158,6 @@ h2{
     box-shadow: 3px 3px 6px;
 }
 .section_myinfo_motivation-block p span {
-    font-size: 30px;
     margin-bottom: 40px;
     text-decoration: underline;
 }
@@ -141,7 +169,6 @@ h2{
     margin: 30px;
 }
 
-
 .section_myinfo_abilities {
     margin: 30px;
     display: flex;
@@ -149,10 +176,10 @@ h2{
     text-align: center;
 }
 .section_myinfo_abilities span {
-    font-size: 30px;
     margin-bottom: 30px;
     text-decoration: underline;
 }
+
 .section_myinfo_abilities ul {
     list-style-type: none;
     margin: 0;
@@ -160,24 +187,25 @@ h2{
 .section_myinfo_abilities ul li {
     display: flex;
     align-items: center;
-    font-size: 25px;    
-}
-.section_myinfo_abilities ul:nth-child(3) {
-    color: blue;
-    margin: 0 0 0 auto;
-
+    /* justify-content: center; */
 }
 .section_myinfo_abilities ul li img {
     padding: 15px 30px 15px 20px;
-    height: 52px;
-    width: 52px;
+    height: 40px;
+    width: 40px;
+}
+.section_myinfo_abilities_personskills {
+    color: rgb(1, 175, 39);
 }
 
 /* section */
 
-.section_skills{
 
-}
+
+
+
+/* section */
+
 .section_skills ul{
     display: flex;
     justify-content: space-between;
@@ -191,7 +219,7 @@ h2{
 footer {
 
     /* height: 350px; */
-    padding-top: 50px;
+    /* padding-top: 20px; */
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
 
@@ -199,7 +227,7 @@ footer {
 footer ul {
     display: flex;
     justify-content: center;
-    padding: 80px 30px;
+    padding: 50px 30px 0px 30px;
     margin: 0;
 }
 footer ul li {
