@@ -7,10 +7,10 @@ body{
     margin: 0;
     max-width: 100%;
 }
-*::selection {
+/* *::selection {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 1);
-}
+} */
 .content_width{
     margin: 0 auto;
     padding: 40px;
@@ -22,7 +22,7 @@ h2{
     height: 75px;
     /* background: rgba(0, 0, 0, 0.9); */
     /* border: 2px solid black; */
-    box-shadow: 0px 0px 50px 5px black inset;
+    box-shadow: 0px 0px 40px 5px black inset;
     font-size: 25px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 100;
@@ -33,6 +33,11 @@ h2{
     align-items: center;
     margin: 0;
 }
+h2:hover {
+    box-shadow: 0px 0px 60px 5px black inset;
+    transition: linear .5s;
+
+}
 h2 img {
     height: 28px;
     width: 28px;
@@ -42,7 +47,7 @@ h2 img {
     font-size: 22px;
 
 }
-
+ 
 
 /* section */
 
@@ -51,9 +56,6 @@ h2 img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 100px; */
-    /* background: linear-gradient(45deg, #bdc3c7, #2c3e50); */
-    /* background: rgba(0, 0, 0, 0.2); */
 }
 .header div {
     display: flex;
@@ -66,10 +68,8 @@ h2 img {
     height: 300px;
     border-radius: 50%;
     margin-right: 100px;
-    /* border: 2px solid white; */
 }
 .header div img:hover {
-    /* border: 2px solid black; */
     transition: linear .5s;
     box-shadow: 0px 0px 5px 5px ;
 } 
@@ -149,6 +149,7 @@ h2 img {
 .section_myinfo_motivation-block {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px 0px 120px 0px;
     /* font-size: 22px; */
 }
@@ -156,7 +157,19 @@ h2 img {
     margin: 30px;
     padding: 20px;
     box-shadow: 3px 3px 6px;
+    /* animation: qwe 1s linear 1; */
 }
+
+/* @keyframes qwe {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(360deg);
+    }
+} */
+
+
 .section_myinfo_motivation-block p span {
     margin-bottom: 40px;
     text-decoration: underline;
@@ -196,9 +209,121 @@ h2 img {
 }
 .section_myinfo_abilities_personskills {
     color: rgb(1, 175, 39);
+    
 }
 
 /* section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_education_content {
+    font-family: Roboto,sans-serif;
+}
+.education_block {
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 6px 1px;
+}
+.education_content_title {
+    margin: 0px 0px 25px 0px;
+    font-size: 20px;
+}    
+.education_content_title_link {
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+}
+.education_content_title_link:hover {
+    text-decoration: underline;
+}
+.education_content_subtitle {
+    margin: 0;
+    /* font-size: 19px; */
+    font-style: italic;
+    /* font-weight: 100; */
+    display: flex;
+    align-items:flex-end;
+}
+.education_content_subtitle img {
+    height: 28px; 
+    width: 28px;
+    padding-right: 8px;
+}
+.subtitle_date {
+    margin: 0px;
+}
+.subtitle_date span {
+    color:#fff;
+    background-color: rgba(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+.education_youtube_channel_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.youtube_channel_card {
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0px -4px 6px #000;
+    box-sizing: border-box;
+    border: rgba(0, 0, 0, 0) solid 3px; /*костылик?*/
+
+    padding: 50px 40px;
+    margin: 0px 0px 30px 0px;
+    width: 30%;
+}
+.youtube_channel_card:hover {
+    background: #000;
+    color: #fff;
+}
+.youtube_channel_card:active {
+    /* box-shadow: 2px 2px white, 4px 4px #000000;
+    bottom: -4px;
+    right: -4px; */
+}
+.youtube_channel_card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.education_content_sites {
+
+}
+.education_content_sites_links {
+
+
+}
+.education_content_sites_links img {
+    height: 75px; 
+    width: 75px;
+    /* border-radius: ; */
+}
+
+
+
+
+
+
 
 
 
