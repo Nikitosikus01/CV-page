@@ -15,14 +15,19 @@ body{
     margin: 0 auto;
     padding: 40px;
     max-width: 70%;
-    /* background-color: pink; */
+    background-color: pink;
     box-sizing: border-box;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
 h2{
     height: 75px;
-    /* background: rgba(0, 0, 0, 0.9); */
-    /* border: 2px solid black; */
-    box-shadow: 0px 0px 40px 5px black inset;
     font-size: 25px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 100;
@@ -32,11 +37,13 @@ h2{
     justify-content: center;
     align-items: center;
     margin: 0;
+    
+    box-shadow: 0px 0px 45px 5px black inset;
+    transition: linear .1s;
 }
 h2:hover {
-    box-shadow: 0px 0px 60px 5px black inset;
-    transition: linear .5s;
-
+    box-shadow: 0px 0px 30px 5px black inset;
+    transition: linear .1s;
 }
 h2 img {
     height: 28px;
@@ -45,9 +52,7 @@ h2 img {
 }
 .paragraph_name {
     font-size: 22px;
-
 }
- 
 
 /* section */
 
@@ -68,11 +73,13 @@ h2 img {
     height: 300px;
     border-radius: 50%;
     margin-right: 100px;
+    /* transition: linear .7s; */
 }
-.header div img:hover {
+/* .header div img:hover {
     transition: linear .5s;
-    box-shadow: 0px 0px 5px 5px ;
-} 
+    box-shadow: 0px 0px 5px 5px;
+}     */
+
 .header div h1{
     font-size: 50px;
     font-family: 'Chango', cursive;
@@ -97,19 +104,20 @@ h2 img {
     font-size: 25px;
     color: rgb(0, 0, 0);
     border: solid 3px;
-    border-radius: 5%;
+    border-radius: 8px;
     padding: 15px 50px;
     margin-bottom: 50px;
-
+    
     position: relative;
-    top: 0;
-    left: 0;
-    transition: .2s linear;
-}
-.header a:hover{
     box-shadow: 2px 2px white, 4px 4px #000000;
     top: -4px;
     left: -4px;
+    transition: .1s linear;
+}
+.header a:active{
+    box-shadow: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
 }
 
 /* section */
@@ -169,7 +177,6 @@ h2 img {
     }
 } */
 
-
 .section_myinfo_motivation-block p span {
     margin-bottom: 40px;
     text-decoration: underline;
@@ -177,56 +184,58 @@ h2 img {
 .section_myinfo_motivation-block img {
     height: 300px;
     width: 300px;
-    border: solid 3px black;
     border-radius: 50%;
     margin: 30px;
+    transition: linear .7s;
 }
+.section_myinfo_motivation-block img:hover {
+    transition: linear .5s;
+    box-shadow: 0px 0px 5px 5px;
+}    
 
 .section_myinfo_abilities {
-    margin: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 19px;
+    margin: 0px;
+    padding-bottom: 80px;
 }
 .section_myinfo_abilities span {
     margin-bottom: 30px;
     text-decoration: underline;
 }
-
 .section_myinfo_abilities ul {
-    list-style-type: none;
-    margin: 0;
+    padding-left: 0;
+    margin: 10px 0px;
+    list-style-type: none;   
 }
 .section_myinfo_abilities ul li {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    /* background-color: rgb(201, 90, 201); */
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    width: 100%;  
 }
 .section_myinfo_abilities ul li img {
-    padding: 15px 30px 15px 20px;
     height: 40px;
     width: 40px;
+    padding: 0px 15px;
 }
-.section_myinfo_abilities_personskills {
-    color: rgb(1, 175, 39);
-    
+/* .abilities_socialskill {
+    transition: width 0.2s ease-in-out 0s;
 }
+.abilities_socialskill:hover {
+    transition: width 0.5s ease-in-out 0s;
+} */
+.abilities_personskill {
+    justify-content: end;
+}
+
 
 /* section */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .section_education_content {
@@ -253,8 +262,8 @@ h2 img {
 .education_content_subtitle {
     margin: 0;
     /* font-size: 19px; */
-    font-style: italic;
     /* font-weight: 100; */
+    font-style: italic;
     display: flex;
     align-items:flex-end;
 }
@@ -295,11 +304,6 @@ h2 img {
     background: #000;
     color: #fff;
 }
-.youtube_channel_card:active {
-    /* box-shadow: 2px 2px white, 4px 4px #000000;
-    bottom: -4px;
-    right: -4px; */
-}
 .youtube_channel_card img {
     width: 100px;
     height: 100px;
@@ -307,52 +311,63 @@ h2 img {
 }
 
 
-
 .education_content_sites {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
 }
 .education_content_sites_links {
-    padding: 15px 0px;
+    margin: 15px 0px;
     display: flex;
-    align-items:flex-end;
-    
-
+    align-items: center;
 }
-.education_content_sites_links img {
-    height: 75px; 
-    width: 75px;
-    border: #000 solid 8px;
-    border-radius: 50%;
-    border-bottom-right-radius: 0%;
-    background-repeat: no-repeat;
-    background-size: container;
-}
+/* .education_content_sites_links img {
+    height: 10%; 
+    width: 10%;
+    border-radius: 5px;
+} */
 .education_content_sites_links a {
-    color: rgb(0, 0, 0);
-    padding: 5px 20px;
-    border: #000 solid 5px;
-    border-left: inherit;
     text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    box-shadow: 3px 3px 6px 1px;
+    border-radius: 8px;
     font-size: 19px;
 }
+.education_content_sites_links a:hover {
+    color: yellow;
+    background: #000;
+}
+
 
 .education_content_books_title {
     text-align: center;
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
     font-weight: 500;
-    
     /* border-bottom: #000 2px solid; */
     box-shadow: 0px 2px 4px 0px darkblue;
     margin: 30px 0px 20px 0px;
+    position: relative;
 }
+/* .education_content_books_title_button {
+    position: absolute;
+    border: #000 solid 2px;
+    box-shadow: 1px 1px , 2px 2px #000000;
+    top: -4px;
+    left: -4px;
+    transition: .1s linear;
+}
+.education_content_books_title_button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+} */
 .education_content_books_tech {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .education_content_book {
     margin-bottom: 40px;
@@ -362,10 +377,19 @@ h2 img {
     width: 300px;
     height: 400px;
 }
+/* .education_content_book img {
+    transform-origin: top left;
+    transform: rotate(0deg);
+}
+.education_content_book img:active {
+    transform: rotate(-50deg);
+} */
 .education_content_book p {
     font-size: 19px;
     font-weight: 600;
-    margin: 7px 0px 10px 3px;
+    margin: 0px;
+    padding: 3px 0px;
+    text-align: center;
 }
 
 
@@ -374,11 +398,19 @@ h2 img {
 
 /* section */
 
-.section_skills ul{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+.section_skills {
+
 }
+
+
+/* section */
+
+
+
+
+
+
+
 
 
 /* section */
