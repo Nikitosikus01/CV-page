@@ -7,15 +7,15 @@ body{
     margin: 0;
     max-width: 100%;
 }
-/* *::selection {
-    color: #ffffff;
+*::selection {
+    color: #fff;
     background-color: rgba(0, 0, 0, 1);
-} */
+}
 .content_width{
     margin: 0 auto;
     padding: 40px;
     max-width: 70%;
-    background-color: pink;
+    /* background-color: pink; */
     box-sizing: border-box;
 }
 
@@ -97,24 +97,35 @@ h2 img {
         background-position: 100% 100%;
     }
 }
-.header a {
-    display: block;
-    max-width: 100px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    border: solid 3px;
-    border-radius: 8px;
-    padding: 15px 50px;
+.header_button_line a {
+
     margin-bottom: 50px;
     
+}
+
+.header_button_line a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    width: 80px;
+    height: 40px;
+    padding: 15px 50px;
+    margin: 0px 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    border: solid 3px;
+    border-radius: 8px;
+
     position: relative;
     box-shadow: 2px 2px white, 4px 4px #000000;
     top: -4px;
     left: -4px;
     transition: .1s linear;
 }
-.header a:active{
+.header_button_line a:active{
     box-shadow: 0px 0px 0px 0px;
     top: 0;
     left: 0;
@@ -124,6 +135,7 @@ h2 img {
 
 .navbar{
     position: sticky;
+    z-index: 9;
     top: 0;
     font-size: 20px;
 }
@@ -205,21 +217,27 @@ h2 img {
     margin-bottom: 30px;
     text-decoration: underline;
 }
-.section_myinfo_abilities ul {
-    padding-left: 0;
-    margin: 10px 0px;
+.section_myinfo_abilities_skills {
+    margin: 0px;
     list-style-type: none;   
+    display: flex;
+    justify-content: space-around;
+       
 }
-.section_myinfo_abilities ul li {
+.section_myinfo_abilities_skills ul {
+
+    padding-left: 0;
+}
+
+.section_myinfo_abilities_skills li {
     display: flex;
     align-items: center;
-    /* background-color: rgb(201, 90, 201); */
     border-radius: 10px;
     padding: 10px 5px;
     margin: 10px 0px;
     width: 100%;  
 }
-.section_myinfo_abilities ul li img {
+.section_myinfo_abilities_skills li img {
     height: 40px;
     width: 40px;
     padding: 0px 15px;
@@ -239,7 +257,7 @@ h2 img {
 
 
 .section_education_content {
-    font-family: Roboto,sans-serif;
+    /* font-family: 'Chango', cursive; */
 }
 .education_block {
     padding: 25px;
@@ -349,7 +367,7 @@ h2 img {
     /* border-bottom: #000 2px solid; */
     box-shadow: 0px 2px 4px 0px darkblue;
     margin: 30px 0px 20px 0px;
-    position: relative;
+    /* position: relative; */
 }
 /* .education_content_books_title_button {
     position: absolute;
@@ -377,13 +395,17 @@ h2 img {
     width: 300px;
     height: 400px;
 }
-/* .education_content_book img {
+.education_content_book img {
     transform-origin: top left;
     transform: rotate(0deg);
 }
+.education_content_book img:hover {
+    cursor: pointer;
+}
 .education_content_book img:active {
+    /* cursor: grabbing; */
     transform: rotate(-50deg);
-} */
+}
 .education_content_book p {
     font-size: 19px;
     font-weight: 600;
@@ -398,19 +420,131 @@ h2 img {
 
 /* section */
 
-.section_skills {
+.tech_skills_block-title {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px;
+}
+.tech_skills_block-languages {
+    margin: 40px;
+    box-sizing: border-box;
+}
+.tech_skills_block-languages_content-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 25px;
+    margin: 0;
+}
+.tech_skills_block-languages_content-list li {
+    display: flex;
+    padding: 10px;
+}
+.tech_skills_block-languages_content-list li span {
+    align-items: center;
+    padding-left: 15px;
+}
+.tech_skills_block-languages_content-list li img {
+    width: 25px;
+    height: 25px;   
+}
+.tech_skills_block-tech {
+    margin: 40px;
+    box-sizing: border-box;
+}
+.tech_skills_block-tech_content_block {
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: #000 solid 1px;
+    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.6);
 
 }
+.tech_skills_block-tech_content_title {
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.tech_skills_block-tech_content_subtitle {
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+}
+.tech_skills_block-tech_content_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.tech_skills_block-tech_content_list li {
+    background: rgb(190, 190, 190);
+    border: rgba(0, 0, 0, 0.6) solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    transition: .1s linear;
+}
+.tech_skills_block-tech_content_list li:hover{
+    box-shadow: 2px 2px  rgb(190, 190, 190), 4px 4px #000;
+    top: -4px;
+    left: -4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 /* section */
 
 
 
-
-
-
-
+.section_experience_info_work {
+    box-shadow: 3px 3px 6px 1px;
+    padding: 20px;
+    margin-bottom: 40px;
+    
+}
+.section_experience_info_work span {
+    /* color:#fff; */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.section_experience_info_work_block-link {
+    text-align: center;
+}
+.section_experience_info_work_link {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    color: #000;
+}
+.section_experience_info_work_link:hover {
+    text-decoration: underline;
+}
+.section_experience_info_work_list {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.section_experience_info_work_list li {
+    padding: 5px 0px;
+}
 
 
 /* section */
