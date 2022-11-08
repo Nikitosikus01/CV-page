@@ -38,13 +38,13 @@ h2{
     align-items: center;
     margin: 0;
     
+    box-shadow: 0px 0px 30px 5px black inset;
+    /* transition: linear .1s; */
+}
+/* h2:hover {
     box-shadow: 0px 0px 45px 5px black inset;
     transition: linear .1s;
-}
-h2:hover {
-    box-shadow: 0px 0px 30px 5px black inset;
-    transition: linear .1s;
-}
+} */
 h2 img {
     height: 28px;
     width: 28px;
@@ -98,16 +98,13 @@ h2 img {
     }
 }
 .header_button_line a {
-
     margin-bottom: 50px;
-    
 }
 
 .header_button_line a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-sizing: border-box; */
     width: 80px;
     height: 40px;
     padding: 15px 50px;
@@ -124,6 +121,10 @@ h2 img {
     top: -4px;
     left: -4px;
     transition: .1s linear;
+}
+.header_button_line a:hover{
+    color: #fff;
+    background-color: #000;
 }
 .header_button_line a:active{
     box-shadow: 0px 0px 0px 0px;
@@ -354,7 +355,7 @@ h2 img {
     font-size: 19px;
 }
 .education_content_sites_links a:hover {
-    color: yellow;
+    color: blue;
     background: #000;
 }
 
