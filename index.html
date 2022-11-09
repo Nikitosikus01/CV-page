@@ -14,43 +14,49 @@
         
 
         <header class="header" id="first_screen">
-            <div>
-                <!-- <img src="/img&icon/ava2.jpg"> -->
-                <!-- <h1>
-                    I'M NIKI <br>
-                    A WEB DEVELOPER
-                </h1> -->
-                <h1>
-                    I'm Niki <br>
-                    Frontend JavaScript Developer
-                </h1>
-            </div>
-            <div class="header_button_line">
-                <a href="#">
-                    Contacts
-                </a>
-                <a href="#navbar">
-                    Menu 
-                    <!-- <span>⮛</span> -->
-                </a>
-                <a href="#">
-                    Download PDF CV 
-                    <!-- <span>⮛</span> -->
-                </a>
+            <div class="header_blocks">
+                <div class="header_title">
+                    <!-- <img src="/img&icon/ava2.jpg"> -->
+                    <!-- <h1>
+                        I'M NIKI <br>
+                        A WEB DEVELOPER
+                    </h1> -->
+                    <h1>
+                        I'm Niki <br>
+                        Frontend JavaScript Developer
+                    </h1>
+                </div>
 
+                <div class="header_button_line" id="button_line">
+                    <a class="header_button_line_contacts" id="button_contacts" target="_blank">
+                        Contacts
+                    </a>
+                    <a class="header_button_line_menu" id="button_menu" target="_blank">
+                        Menu 
+                        <!-- <span>⮛</span> -->
+                    </a>
+                    <a href="#" id="download" target="_blank">
+                        Download PDF CV 
+                        <!-- <span>⮛</span> -->
+                    </a>
+                </div>
             </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <a href="#first_screen">Back up <span>🠕🠕🠕</span></a>
+                    <a href="#about_me">About me</a>
+                    <a href="#education">Education</a>
+                    <a href="#tech_skills">My tech skills</a>
+                    <a href="#experience">Experience</a>
+                    <!-- <a href="#My_projects">My projects</a> -->
+                </ul>
+            </nav>
+            <div class="contacts" id="contacts">
+                <a href="">Telegram</a>
+            </div>
+
         </header>
-        <nav class="navbar" id="navbar">
-            <ul>
-                <a href="#first_screen">Back up <span>🠕🠕🠕</span></a>
-                <a href="#about_me">About me</a>
-                <a href="#education">Education</a>
-                <a href="#tech_skills">My tech skills</a>
-                <a href="#experience">Experience</a>
-                <!-- <a href="#My_projects">My projects</a> -->
-            </ul>
-        </nav>
-
 
         <section class="section_myinfo">
             <a class="anchor" id="about_me"></a>
@@ -247,12 +253,28 @@
                             
                         </ul>
                     </div>
+
                     <div class="tech_skills_block-tech">
                         <h3 class="tech_skills_block-title">Technologies</h3>
                         <div class="tech_skills_block-tech_content"> 
+                            
+                            <div class="tech_skills_block-tech_content_block">
+                                <h4 class="tech_skills_block-tech_content_title">Basics tech</h4>
+                                <ul class="tech_skills_block-tech_content_list">
+                                    <li>Version control, Git</li>
+                                    <li>Command line</li>
+                                    <li>HTTP protocol basics </li>
+                                    <li>REST API </li>
+                                    <!-- <li>Programming paradigms</li> -->
+                                    <!-- <li>Architecture patterns: SOLID</li> -->
+                                    <!-- <li>Design patterns basics</li> -->
+                                </ul>                        
+                            </div>
+
                             <div class="tech_skills_block-tech_content_block">
                                 <h4 class="tech_skills_block-tech_content_title">html5, css3 <p class="tech_skills_block-tech_content_subtitle">at the site creation level</p></h4>
                                 <ul class="tech_skills_block-tech_content_list">
+                                    <li>semantics tags</li>
                                     <li>flex, grid</li>
                                     <li>adaptation</li>
                                     <li>animations</li>
@@ -267,24 +289,10 @@
                                     <li>Working with functions</li>
                                     <li>Working with objects</li>
                                     <li>Classes</li>
-                                    <li>Asynchrony</li>
-                                    <li>Working with the DOM</li>
+                                    <!-- <li>Asynchrony</li> -->
+                                    <!-- <li>Working with the DOM</li> -->
                                 </ul>
                             </div>  
-
-                            <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">Basics tech</h4>
-                                <ul class="tech_skills_block-tech_content_list">
-                                    <li>Version control, Git</li>
-                                    <li>Command line</li>
-                                    <li>HTTP protocol basics </li>
-                                    <li>REST API </li>
-                                    <li>Programming paradigms</li>
-                                    <li>Architecture patterns: SOLID</li>
-                                    <li>Design patterns basics</li>
-                                </ul>                        
-                            </div>  
-
                         </div>
                     </div>
                 </div>
@@ -385,6 +393,9 @@
         </footer>
         <!-- сделать новую ветку в git, добавить в проект js и потом объединить ветки -->
     <!-- </section> -->
+    <script src="/script.js">
+
+    </script>
 </body>
 
 </html>
