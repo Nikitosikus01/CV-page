@@ -1,16 +1,27 @@
 
+
+
 const buttonMenu = document.getElementById('button_menu');
 const blockNavbar = document.getElementById('navbar');
 const navInvis = document.getElementById('navbar_invisibility');
+
 // попробовать реализовать через раскомментирование
 buttonMenu.addEventListener('click', () => {
+    
     blockNavbar.classList.toggle('navbar_display');
+
+    if(getComputedStyle(navInvis).maxWidth == '850px'){
+    
+    }
+
     if(getComputedStyle(navInvis).display == 'none'){
         navInvis.style.display = 'block';
     } else {
         navInvis.style.display = 'none';
     }
 })
+
+
 
 
 const buttonContacts = document.getElementById('button_contacts');
