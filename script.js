@@ -1,43 +1,67 @@
 
-// document.getElementById('menu').onmouseover = function(event) {
-//     let target = event.target;
-//     if (target.className == 'header_button_line_menu') {
-//         let s = target.getElementsByClassName('navbar');
-//         closeMenu();
-//         s[0].style.display = 'block';
-//     }
-// }    
-
-// function closeMenu () {
-//     let menu = document.getElementById('menu');
-//     let navbar = document.getElementsByClassName('navbar');
-//     for (let i = 0; i < navbar.length; i++) {
-//         navbar[i].style.display="none";
-        
-//     }
-// }
-
-
-
 const buttonMenu = document.getElementById('button_menu');
 const blockNavbar = document.getElementById('navbar');
-
-const buttonContacts = document.getElementById('button_contacts');
-const blockContacts = document.getElementById('contacts');
-
-
+// попробовать реализовать через раскомментирование
 buttonMenu.addEventListener('click', () => {
-    console.log('Click');
-    
     blockNavbar.classList.toggle('navbar_display');
 })
 
-buttonContacts.addEventListener('click', () => {
-    console.log('Click');
 
-    // if()
-    blockContacts.style.display = 'block';
-    blockContacts.style.display = 'none';
-    
+const buttonContacts = document.getElementById('button_contacts');
+const modalWindowContacts = document.getElementById('backlayer_contacts');
+
+const buttonPDFCV = document.getElementById('button_PDFCV');
+const modalWindowPDFCV = document.getElementById('backlayer_PDF');
+
+const buttonContactsCross = document.getElementById('button_contacts_cross');
+const buttonPDFCross = document.getElementById('button_PDF_cross');
+
+
+// open modal window
+buttonContacts.addEventListener('click', () => {
+    if(getComputedStyle(modalWindowContacts).display == 'none'){
+        modalWindowContacts.style.display = 'block';
+    } 
+    // else {
+    //     modalWindowContacts.style.display = 'none';
+    // }
 })
+
+buttonPDFCV.addEventListener('click', () => {
+    if(getComputedStyle(modalWindowPDFCV).display == 'none'){
+        modalWindowPDFCV.style.display = 'block';
+    }
+})
+
+// clouse modal window constants by cross
+buttonContactsCross.addEventListener('click', () => {
+    modalWindowContacts.style.display = 'none';
+})
+
+// clouse modal window PDF cv by cross
+buttonPDFCross.addEventListener('click', () => {
+    modalWindowPDFCV.style.display = 'none';
+})
+
+// clouse modal windows constants and PDF by clicking on an empty space
+window.onclick = (event) => { 
+    if (event.target == modalWindowContacts) {
+        modalWindowContacts.style.display = 'none';
+    } else if (event.target == modalWindowPDFCV) {
+        modalWindowPDFCV.style.display = 'none';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
