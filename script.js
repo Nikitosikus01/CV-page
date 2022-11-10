@@ -59,12 +59,50 @@ window.onclick = (event) => {
 }
 
 
+const buttonOtherCards = document.getElementById('education_youtube_channel_title');
+const otherCards = document.getElementById('education_youtube_channel_other_cards');
+const otherCardsSymbol = document.getElementById('education_youtube_channel_title_symbol');
+
+
+buttonOtherCards.addEventListener('click', () => {
+    // change + to -
+
+    if (otherCardsSymbol.textContent == '+') {
+        otherCardsSymbol.innerHTML = '-';
+    } else {
+        otherCardsSymbol.innerHTML = '+';
+    }
+
+    if (getComputedStyle(otherCards).display == 'none'){
+        otherCards.style.display = 'flex';
+    } else {
+        otherCards.style.display = 'none';
+    }
+
+})
 
 
 
+const buttonFictionBooks = document.getElementById('education_content_books_title');
+const fictionBooks = document.getElementById('education_content_books_fiction');
+const fictionBooksSymbol = document.getElementById('education_content_books_title_symbol');
 
+buttonFictionBooks.addEventListener('click', () => {
+    // change + to -
 
+    if (otherCardsSymbol.textContent == '+') {
+        otherCardsSymbol.innerHTML = '-';
+    } else {
+        otherCardsSymbol.innerHTML = '+';
+    }
 
+    if (getComputedStyle(fictionBooks).display == 'none'){
+        fictionBooks.style.display = 'flex';
+    } else {
+        fictionBooks.style.display = 'none';
+    }
+
+})
 
 
 

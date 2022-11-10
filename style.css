@@ -437,7 +437,23 @@ h2 img {
     height: 100px;
     border-radius: 50%;
 }
-
+.education_youtube_channel_title {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    box-shadow: 0px 2px 4px 0px darkblue;
+    margin: 30px 0px;
+    padding: 5px;
+}
+.education_youtube_channel_title:hover {
+    cursor: pointer;
+}
+.education_youtube_channel_other_cards {
+    display: none; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .education_content_sites {
     display: flex;
@@ -477,21 +493,11 @@ h2 img {
     /* border-bottom: #000 2px solid; */
     box-shadow: 0px 2px 4px 0px darkblue;
     margin: 30px 0px 20px 0px;
-    /* position: relative; */
+    padding: 5px;
 }
-/* .education_content_books_title_button {
-    position: absolute;
-    border: #000 solid 2px;
-    box-shadow: 1px 1px , 2px 2px #000000;
-    top: -4px;
-    left: -4px;
-    transition: .1s linear;
+.education_content_books_title:hover {
+    cursor: pointer;
 }
-.education_content_books_title_button:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 0;
-    left: 0;
-} */
 .education_content_books_tech {
     display: flex;
     flex-wrap: wrap;
@@ -523,7 +529,11 @@ h2 img {
     padding: 3px 0px;
     text-align: center;
 }
-
+.education_content_books_fiction { 
+    display: none; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
 
