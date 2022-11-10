@@ -19,19 +19,25 @@
 
 
 
-const buttonMenu = document.querySelector('.header_button_line_menu');
-const buttonContacts = document.querySelector('.header_button_line_contacts');
+const buttonMenu = document.getElementById('button_menu');
+const blockNavbar = document.getElementById('navbar');
 
-const blockNavbar = document.querySelector('.navbar');
-const blockContacts = document.querySelector('.contacts');
+const buttonContacts = document.getElementById('button_contacts');
+const blockContacts = document.getElementById('contacts');
 
 
-buttonMenu.onclick = function () {
+buttonMenu.addEventListener('click', () => {
     console.log('Click');
-    blockNavbar.style.display = "block";
-}
+    
+    blockNavbar.classList.toggle('navbar_display');
+})
 
-buttonContacts.onclick = function () {
+buttonContacts.addEventListener('click', () => {
+    console.log('Click');
+
+    // if()
     blockContacts.style.display = 'block';
-}
+    blockContacts.style.display = 'none';
+    
+})
 

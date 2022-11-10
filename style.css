@@ -139,9 +139,11 @@ h2 img {
 }
 
 /* section */
+.navbar_display { 
+    display: none;
+}
 
 .navbar{
-    display: none;
     
     position: sticky;
     z-index: 9;
