@@ -11,9 +11,20 @@
 
 <body>
     <!-- <section class="main_section"> -->
-        
+        <a id="first_screen"></a>
+        <div class="navbar_invisibility" id="navbar_invisibility"></div>
+        <nav class="navbar navbar_display" id="navbar">
+            <ul class="" id="">
+                <a href="#first_screen">Back up <span>🠕🠕🠕</span></a>
+                <a href="#about_me">About me</a>
+                <a href="#education">Education</a>
+                <a href="#tech_skills">My tech skills</a>
+                <a href="#experience">Experience</a>
+                <!-- <a href="#My_projects">My projects</a> -->
+            </ul>
+        </nav>
 
-        <header class="header" id="first_screen">
+        <header class="header">
             <div class="header_blocks">
                 <div class="header_title">
                     <!-- <img src="/img&icon/ava2.jpg"> -->
@@ -33,55 +44,39 @@
                     </a>
                     <a class="header_button_line_menu" id="button_menu">
                         Menu 
-                        <!-- <span>⮛</span> -->
                     </a>
                     <a href="#" id="button_PDFCV">
                         PDF_CV 
-                        <!-- <span>⮛</span> -->
                     </a>
                 </div>
             </div>
 
-            <nav class="navbar navbar_display" id="navbar">
-                <ul class="" id="">
-                    <a href="#first_screen">Back up <span>🠕🠕🠕</span></a>
-                    <a href="#about_me">About me</a>
-                    <a href="#education">Education</a>
-                    <a href="#tech_skills">My tech skills</a>
-                    <a href="#experience">Experience</a>
-                    <!-- <a href="#My_projects">My projects</a> -->
-                </ul>
-            </nav>
-
             <div class="modal-window_backlayer" id="backlayer_contacts">
                 <div class="modal-window_contacts" id="contacts">
-
                     <div class="modal-window_contacts_cross">
-                        <button id="button_contacts_cross">cross</button>
+                        <img src="/img&icon/modal window/close.png" id="button_contacts_cross">
                     </div>
                     <div class="modal-window_contacts_links">
+                        <a href="">+48 536202360</a>
                         <a href="">Telegram</a>
-                        <a href="">Telegram</a>
+                        <a href="">Email</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Messenger</a>
                     </div>
-
                 </div>
             </div>
 
             <div class="modal-window_backlayer" id="backlayer_PDF">
                 <div class="modal-window_PDF">
-                    
                     <div class="modal-window_PDF_cross">
-                        <button id="button_PDF_cross">cross</button>
+                        <img src="/img&icon/modal window/close.png" id="button_PDF_cross">
                     </div>
-                    <h4>PDF CV</h4>
                     <div class="modal-window_PDF_buttons">
-                        <a>Open</a>
-                        <a>Download</a>
+                        <a href="/img&icon/Mishkuro_CV_en.pdf" target="_blank">Open in new tab</a>
+                        <a href="/img&icon/Mishkuro_CV_en.pdf" download="">Download</a>
                     </div>
-
                 </div>
             </div>
-
 
         </header>
 
@@ -174,15 +169,21 @@
                                 <img src="/img&icon/education block/VladilenMinin.jpg">
                                 <p>Владилен Минин</p>
                             </a>
+                            <a class="youtube_channel_card" href="https://www.youtube.com/c/FreelancerLifeStyle" target="_blank">
+                                <img src="/img&icon/education block/FreelancerLifeStyle.jpg">
+                                <p>Фрілансер по життю</p>
+                            </a>
                             <a class="youtube_channel_card" href="https://youtube.com/c/WAYUPIN" target="_blank">
                                 <img src="/img&icon/education block/WATUP.jpg">
                                 <p>WAYUP & Андрей Гаврилов</p>
                             </a>
+                            
+                            <h3>other</h3>
+
                             <a class="youtube_channel_card" href="https://youtube.com/c/OnlineTutorials4Designers" target="_blank">
                                 <img src="/img&icon/education block/Online Tutorials.jpg">
                                 <p>Online Tutorials</p>
                             </a>
-
                             <a class="youtube_channel_card" href="https://youtube.com/c/BrainsCloud" target="_blank">
                                 <img src="/img&icon/education block/BrainsCloud.jpg">
                                 <p>BrainsCloud</p>
@@ -287,7 +288,7 @@
                         <div class="tech_skills_block-tech_content"> 
                             
                             <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">Basics tech</h4>
+                                <h4 class="tech_skills_block-tech_content_title">Basics</h4>
                                 <ul class="tech_skills_block-tech_content_list">
                                     <li>Version control, Git</li>
                                     <li>Command line</li>
@@ -300,25 +301,32 @@
                             </div>
 
                             <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">html5, css3 <p class="tech_skills_block-tech_content_subtitle">at the site creation level</p></h4>
+                                <h4 class="tech_skills_block-tech_content_title">
+                                    html5, css3
+                                    <!-- <p class="tech_skills_block-tech_content_subtitle">at the site creation level</p> -->
+                                </h4>
                                 <ul class="tech_skills_block-tech_content_list">
-                                    <li>semantics tags</li>
-                                    <li>flex, grid</li>
-                                    <li>adaptation</li>
-                                    <li>animations</li>
+                                    <li>Semantics</li>
+                                    <li>Flex, grid</li>
+                                    <li>Adaptation</li>
+                                    <li>Animations</li>                                    
                                 </ul>
                             </div>
-
+                            
                             <div class="tech_skills_block-tech_content_block">
                                 <h4 class="tech_skills_block-tech_content_title">JavaScript</h4>
                                 <ul class="tech_skills_block-tech_content_list">
-                                    <li>JavaScript Basics</li>
                                     <li>Data types</li>
-                                    <li>Working with functions</li>
-                                    <li>Working with objects</li>
-                                    <li>Classes</li>
-                                    <!-- <li>Asynchrony</li> -->
-                                    <!-- <li>Working with the DOM</li> -->
+                                    <li>Conditional and logical operators </li>
+                                    <li>Functions</li>
+                                    <li>Arrays and array methods </li>
+                                    <li>Objects and methods of object</li>
+                                    <!-- <li>Constructor, “new” operator </li> -->
+                                    <!-- <li>prototype</li> -->
+                                    <!-- <li>classes</li> -->
+                                    <!-- <li>asynchronous operations: callbacks, promises, async functions </li> -->
+                                    <!-- <li>event loop </li> -->
+                                    <li>DOM tree </li>
                                 </ul>
                             </div>  
                         </div>
@@ -378,21 +386,7 @@
         </section>
 
         <!-- <section class="section_projects" id="My_projects">
-            <h2><img src="/img&icon/work_experience.png">My_projects</h2>
-            <div class="content_width">
-
-            </div>
-        </section> -->
-
-        <!-- <section class="section_projects" id="My_projects">
-            <h2><img src="/img&icon/work_experience.png">хобби</h2>
-            <div class="content_width">
-
-            </div>
-        </section> -->
-
-        <!-- <section class="section_projects" id="My_projects">
-            <h2><img src="/img&icon/work_experience.png">привычки</h2>
+            <h2><img src="/img&icon/work_experience.png">hobbies</h2>
             <div class="content_width">
 
             </div>
@@ -400,30 +394,18 @@
 
         <footer>
                 <ul>
-                    <li>
-                        <a href="">Telegram</a>
-                    </li>
-                    <li>
-                        <a href="">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="">Instagram</a>
-                    </li>
-
+                    <li><a href="" title="" target="_blank">Telegram</a></li>
+                    <li><a href="" title="" target="_blank">Email</a></li>
+                    <li><a href="" title="" target="_blank">LinkedIn</a></li>
+                    <li><a href="" title="" target="_blank">Facebook</a></li>
                 </ul>
                 <!-- сделать кнопочку при нажатии отображается график частоты использования соц сетей -->
                 <p>
                     Warsaw 2022
                 </p>
         </footer>
-        <!-- сделать новую ветку в git, добавить в проект js и потом объединить ветки -->
     <!-- </section> -->
-    <script src="/script.js">
-
-    </script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
