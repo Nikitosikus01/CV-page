@@ -639,12 +639,14 @@ h2 img {
     text-align: center;
 }
 .section_experience_info_work_link {
+    text-decoration: none;
     font-size: 20px;
     font-style: italic;
+    font-weight: 600;
     color: #000;
 }
 .section_experience_info_work_link:hover {
-    font-weight: 600;
+    text-decoration: underline;
 }
 .section_experience_info_work_list {
     margin: 0;
@@ -655,11 +657,13 @@ h2 img {
     padding: 5px 0px;
 }
 .section_experience_info_work_list_link {
+    text-decoration: none;
+    font-weight: 600;
     font-style: italic;
     color: #000;
 }
 .section_experience_info_work_list_link:hover {
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 
