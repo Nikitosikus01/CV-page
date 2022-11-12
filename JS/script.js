@@ -1,15 +1,13 @@
 
 
 
-const buttonMenu = document.getElementById('button_menu');
+const menuPhone = document.getElementById('menu_phone');
 const blockNavbar = document.getElementById('navbar');
 const navInvis = document.getElementById('navbar_invisibility');
 
 // попробовать реализовать через раскомментирование
-buttonMenu.addEventListener('click', () => {
+menuPhone.addEventListener('click', () => {
     
-    blockNavbar.classList.toggle('navbar_display');
-
     if(getComputedStyle(navInvis).maxWidth == '850px'){
     
     }

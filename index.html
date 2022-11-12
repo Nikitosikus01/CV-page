@@ -11,421 +11,408 @@
 </head>
 
 <body>
-    <!-- <section class="main_section"> -->
-        <a id="first_screen"></a>
-        <div class="navbar_invisibility" id="navbar_invisibility"></div>
-        
-        <nav class="navbar navbar_display" id="navbar">
-            <ul>
-                <a class="navbar_link" href="#first_screen"><span>Back up </span>🠕🠕🠕</a>
-                <a class="navbar_link" href="#about_me">About me</a>
-                <a class="navbar_link" href="#education">Education</a>
-                <a class="navbar_link" href="#tech_skills">My tech skills</a>
-                <a class="navbar_link" href="#experience">Experience</a>
-                <!-- <a href="#My_projects">My projects</a> -->
-            </ul>
-        </nav>
+    <nav class="navbar_invisibility" id="navbar_invisibility"></nav>
+    <img src="/img&icon/menu.png" class="menu_phone" id="menu_phone">
 
-        <header class="header">
-            <div class="header_blocks">
-                <div class="header_title">
-                    <!-- <img src="/img&icon/ava2.jpg"> -->
-                    <!-- <h1>
-                        I'M NIKI <br>
-                        A WEB DEVELOPER
-                    </h1> -->
-                    <h1>
-                        I'm Niki —<br>
-                        Frontend JavaScript Developer
-                    </h1>
-                </div>
-
-                <div class="header_button_line" id="button_line">
-                    <a class="header_button_line_contacts" id="button_contacts">
-                        Contacts
-                    </a>
-                    <a class="header_button_line_menu" id="button_menu">
-                        Menu 
-                    </a>
-                    <a href="#" id="button_PDFCV">
-                        PDF CV
-                    </a>
-                </div>
+    <header class="header" id="first_screen">
+        <div class="header_blocks">
+            <div class="header_title">
+                <h1>
+                    I'm Niki -<br>
+                    Frontend JavaScript Developer
+                </h1>
             </div>
 
-            <div class="modal-window_backlayer" id="backlayer_contacts">
-                <div class="modal-window_contacts" id="contacts">
-                    <div class="modal-window_contacts_cross">
-                        <img src="/img&icon/modal window/close.png" id="button_contacts_cross">
-                    </div>
+            <div class="header_button_line" id="button_line">
+                <a class="header_button_line_contacts" id="button_contacts">
+                    Contacts
+                </a>
+                <a href="#" id="button_PDFCV">
+                    PDF CV
+                </a>
+            </div>
+        </div>
 
-                    <div class="modal-window_contacts_links">    
-                        <a href="tel: +48536202360" target="_blank">+48 536 202 360</a>
-                        <a href="https://t.me/niiikitoshka" target="_blank" style="    text-decoration: underline;">Telegram</a>
-                        <a href="mailto:nikitamishkuro123@gmail.com" target="_blank">nikitamishkuro123@gmail.com</a>
-                        <a href="https://www.linkedin.com/in/nikita-mishkuro-b03657206/" target="_blank">LinkedIn</a>
-                        <!-- <a href="" target="_blank">Facebook</a> -->
-                    </div>
+        <div class="modal-window_backlayer" id="backlayer_contacts">
+            <div class="modal-window_contacts" id="contacts">
+                <div class="modal-window_contacts_cross">
+                    <img src="/img&icon/modal window/close.png" id="button_contacts_cross">
+                </div>
+                <div class="modal-window_contacts_links">    
+                    <a href="tel: +48536202360" target="_blank">+48 536 202 360</a>
+                    <a href="https://t.me/niiikitoshka" target="_blank" style="    text-decoration: underline;">Telegram</a>
+                    <a href="mailto:nikitamishkuro123@gmail.com" target="_blank">nikitamishkuro123@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/nikita-mishkuro-b03657206/" target="_blank">LinkedIn</a>
+                    <!-- <a href="" target="_blank">Facebook</a> -->
                 </div>
             </div>
+        </div>
 
-            <div class="modal-window_backlayer" id="backlayer_PDF">
-                <div class="modal-window_PDF">
-                    <div class="modal-window_PDF_cross">
-                        <img src="/img&icon/modal window/close.png" id="button_PDF_cross">
-                    </div>
-                    <div class="modal-window_PDF_buttons">
-                        <a href="/img&icon/Mishkuro Nikita CV.pdf" target="_blank">Open in new tab</a>
-                        <a href="/img&icon/Mishkuro Nikita CV.pdf" download="">Download</a>
-                    </div>
+        <div class="modal-window_backlayer" id="backlayer_PDF">
+            <div class="modal-window_PDF">
+                <div class="modal-window_PDF_cross">
+                    <img src="/img&icon/modal window/close.png" id="button_PDF_cross">
+                </div>
+                <div class="modal-window_PDF_buttons">
+                    <a href="/img&icon/Mishkuro Nikita CV.pdf" target="_blank">Open in new tab</a>
+                    <a href="/img&icon/Mishkuro Nikita CV.pdf" download="">Download</a>
                 </div>
             </div>
+        </div>
 
-        </header>
+    </header>
+    
+    <nav class="navbar" id="navbar">
+        <ul>
+            <a class="navbar_link" href="#first_screen"><span>Back up </span>🠕🠕🠕</a>
+            <a class="navbar_link" href="#about_me">About me</a>
+            <a class="navbar_link" href="#education">Education</a>
+            <a class="navbar_link" href="#tech_skills">My tech skills</a>
+            <a class="navbar_link" href="#experience">Experience</a>
+            <!-- <a href="#My_projects">My projects</a> -->
+        </ul>
+    </nav>
 
+    <section class="section_myinfo">
+        <a class="anchor" id="about_me"></a>
+        <h2><img src="/img&icon/person.png">ABOUT ME</h2>
+        <div class="content_width">
+            <container class="section_myinfo_content">
+                <div class="section_myinfo_motivation-block">
+                    <p>
+                        <!-- анимация подчёркивания вытекающая в границу фото -->
+                        <span class="paragraph_name">Who am i?</span><br><br>
+                        I am Nikita Mishkuro - reliable, active and hardworking person, sportsman,
+                        a team player and can easily find a common language in a new team.
+                        I have experience in managing and organizing, resolving conflicts in a group. <br>
+                        I'm looking for my next adventure in Hi-Tech world.
+                        And I'm sure that technology can change the world.
+                    </p>
+                    <img src="/img&icon/ava.jpg">
+                </div>
+                <div class="section_myinfo_abilities">
+                    <span class="paragraph_name">What are my soft skills?</span>
+                    <!-- анимация появления текста из картинки с небольшой задержкой -->
+                    <div class="section_myinfo_abilities_skills">   
+                        <ul class="section_myinfo_abilities_socialskills">
+                            <li class="abilities_socialskill"><img src="/img&icon/skills block/team.png">Teamwork</li>
+                            <li class="abilities_socialskill"><img src="/img&icon/skills block/flexibility.png">Flexibility</li>
+                            <li class="abilities_socialskill"><img src="/img&icon/skills block/ability to negotiate.png">Ability to negotiate</li>
+                            <li class="abilities_socialskill"><img src="/img&icon/skills block/sensitivity.png">Sensitivity</li>
+                            <li class="abilities_socialskill"><img src="/img&icon/skills block/understanding.png">Understanding</li>
+                            <!-- <li class="abilities_socialskill"><img src="/img&icon/skills block/communication.png">Communication </li> -->
+                        </ul>
+                        <ul class="section_myinfo_abilities_personskills">
+                            <li class="abilities_personskill">Purposeful<img src="/img&icon/skills block/purposeful.png"></li>
+                            <li class="abilities_personskill">Attentiveness<img src="/img&icon/skills block/attention.png"></li>
+                            <li class="abilities_personskill">Resistant to pressure and stress<img src="/img&icon/skills block/discipline1.png"></li>
+                            <li class="abilities_personskill">Discipline<img src="/img&icon/skills block/discipline.png"></li>
+                            <li class="abilities_personskill">Adaptability<img src="/img&icon/skills block/adaptation.png"></li>
+                            <!-- <li class="abilities_personskill">Problem solving<img src="/img&icon/skills block/gear_maintenance.png"></li> -->
+                            <!-- <li class="abilities_personskill">Research<img src="/img&icon/skills block/research.png"></li> -->
+                        </ul>
+                    </div> 
+                </div>
+            </container>
+        </div>
+    </section>
+    <section class="section_education" >
+        <a class="anchor" id="education"></a>
+        <h2><img src="/img&icon/education_icon.png" >EDUCATION</h2>
+        <div class="content_width">
+            <div class="section_education_content">
 
-        <section class="section_myinfo">
-            <a class="anchor" id="about_me"></a>
-            <h2><img src="/img&icon/person.png">ABOUT ME</h2>
-            <div class="content_width">
-                <container class="">
-                    <div class="section_myinfo_motivation-block">
-                        <p>
-                            <!-- анимация подчёркивания вытекающая в границу фото -->
-                            <span class="paragraph_name">Who am i?</span><br><br>
-                            I am Nikita Mishkuro - reliable, active and hardworking person, sportsman,
-                            a team player and can easily find a common language in a new team.
-                            I have experience in managing and organizing, resolving conflicts in a group. <br>
-                            I'm looking for my next adventure in Hi-Tech world.
-                            And I'm sure that technology can change the world.
-                        </p>
-                        <img src="/img&icon/ava.jpg">
+                <div class="education_block">
+                    <h4 class="education_content_title">Minsk State College of Electronics</h4>
+                    <div class="education_content_subtitle">
+                        <img src="/img&icon/calendar_icon.png">
+                        <p class="subtitle_date">2018 - 2022</p>
                     </div>
-                    <div class="section_myinfo_abilities">
-                        <span class="paragraph_name">What are my soft skills?</span>
-                        <!-- анимация появления текста из картинки с небольшой задержкой -->
-                        <div class="section_myinfo_abilities_skills">   
-                            <ul class="section_myinfo_abilities_socialskills">
-                                <li class="abilities_socialskill"><img src="/img&icon/skills block/team.png">Teamwork</li>
-                                <li class="abilities_socialskill"><img src="/img&icon/skills block/flexibility.png">Flexibility</li>
-                                <li class="abilities_socialskill"><img src="/img&icon/skills block/ability to negotiate.png">Ability to negotiate</li>
-                                <li class="abilities_socialskill"><img src="/img&icon/skills block/sensitivity.png">Sensitivity</li>
-                                <li class="abilities_socialskill"><img src="/img&icon/skills block/understanding.png">Understanding</li>
-                                <!-- <li class="abilities_socialskill"><img src="/img&icon/skills block/communication.png">Communication </li> -->
-                            </ul>
-                            <ul class="section_myinfo_abilities_personskills">
-                                <li class="abilities_personskill">Purposeful<img src="/img&icon/skills block/purposeful.png"></li>
-                                <li class="abilities_personskill">Attentiveness<img src="/img&icon/skills block/attention.png"></li>
-                                <li class="abilities_personskill">Resistant to pressure and stress<img src="/img&icon/skills block/discipline1.png"></li>
-                                <li class="abilities_personskill">Discipline<img src="/img&icon/skills block/discipline.png"></li>
-                                <li class="abilities_personskill">Adaptability<img src="/img&icon/skills block/adaptation.png"></li>
-                                <!-- <li class="abilities_personskill">Problem solving<img src="/img&icon/skills block/gear_maintenance.png"></li> -->
-                                <!-- <li class="abilities_personskill">Research<img src="/img&icon/skills block/research.png"></li> -->
-                            </ul>
-                        </div> 
+                </div>
+                
+                <div class="education_block">
+                    <h4 class="education_content_title">Course
+                        <a class="education_content_title_link" target="_blank" href="https://www.udemy.com/course/javascript_full/">
+                            “The Complete JavaScript + React Course - Zero Result”
+                        </a>
+                    </h4>
+                    <div class="education_content_subtitle">
+                        <img src="/img&icon/calendar_icon.png">
+                        <p class="subtitle_date">August 2022 - <span>Currently</span></p>
                     </div>
-                </container>
-            </div>
-        </section>
-        <section class="section_education" >
-            <a class="anchor" id="education"></a>
-            <h2><img src="/img&icon/education_icon.png" >EDUCATION</h2>
-            <div class="content_width">
-                <div class="section_education_content">
+                </div>
+                
+                <div class="education_block">
+                    <h4 class="education_content_title">YouTube Channels</h4>
+                    <div class="education_youtube_channel_cards">
+                        <a class="youtube_channel_card" href="https://youtube.com/c/ITKAMASUTRA" target="_blank">
+                            <img src="/img&icon/education block/IT-CAMASUTRA.jpg">
+                            <p>IT-KAMASUTRA</p>
+                        </a>
+                        <a class="youtube_channel_card" href="https://youtube.com/c/UlbiTV" target="_blank">
+                            <img src="/img&icon/education block/Ulbi TV.jpg">
+                            <p>UlbiTV</p>
+                        </a>
+                        <a class="youtube_channel_card" href="https://youtube.com/c/EduCatterOfficial" target="_blank">
+                            <img src="/img&icon/education block/EduCatter.jpg">
+                            <p>EduCatter</p>
+                        </a>
+                        <a class="youtube_channel_card" href="https://youtube.com/c/VladilenMinin" target="_blank">
+                            <img src="/img&icon/education block/VladilenMinin.jpg">
+                            <p>Владилен Минин</p>
+                        </a>
+                        <a class="youtube_channel_card" href="https://www.youtube.com/c/FreelancerLifeStyle" target="_blank">
+                            <img src="/img&icon/education block/FreelancerLifeStyle.jpg">
+                            <p>Фрілансер по життю</p>
+                        </a>
+                        <a class="youtube_channel_card" href="https://youtube.com/c/WAYUPIN" target="_blank">
+                            <img src="/img&icon/education block/WATUP.jpg">
+                            <p>WAYUP & Андрей Гаврилов</p>
+                        </a>
+                    </div>    
+                    
+                    <div class="">
+                        <h5 class="education_youtube_channel_title" id="education_youtube_channel_title">
+                            Other channels 
+                            <span id="education_youtube_channel_title_symbol">+</span>
+                        </h5>
 
-                    <div class="education_block">
-                        <h4 class="education_content_title">Minsk State College of Electronics</h4>
-                        <div class="education_content_subtitle">
-                            <img src="/img&icon/calendar_icon.png">
-                            <p class="subtitle_date">2018 - 2022</p>
+                        <div class="education_youtube_channel_other_cards" id="education_youtube_channel_other_cards">
+                            <a class="youtube_channel_card" href="https://youtube.com/c/OnlineTutorials4Designers" target="_blank">
+                                <img src="/img&icon/education block/Online Tutorials.jpg">
+                                <p>Online Tutorials</p>
+                            </a>
+                            <a class="youtube_channel_card" href="https://youtube.com/c/ITBEARD" target="_blank">
+                                <img src="/img&icon/education block/АйТиБорода.jpg">
+                                <p>АйТиБорода</p>
+                            </a>
+                            <a class="youtube_channel_card" href="https://youtube.com/c/BrainsCloud" target="_blank">
+                                <img src="/img&icon/education block/BrainsCloud.jpg">
+                                <p>BrainsCloud</p>
+                            </a>
+                            <a class="youtube_channel_card" href="https://youtube.com/c/Bytepp" target="_blank">
+                                <img src="/img&icon/education block/Byte++.jpg">
+                                <p>Byte++</p>
+                            </a>
+                            <a class="youtube_channel_card" href="https://youtube.com/c/SimpleCodeIT" target="_blank">
+                                <img src="/img&icon/education block/SimpleCode.jpg">
+                                <p>#SimpleCode</p>
+                            </a>
+                            <!-- <a class="youtube_channel_card" href="https://youtube.com/c/ilyin_it" target="_blank">
+                                <img src="/img&icon/education block/Александр Ильин про IT.jpg">
+                                <p>Александр Ильин про IT</p>
+                            </a> -->
                         </div>
                     </div>
                     
-                    <div class="education_block">
-                        <h4 class="education_content_title">Course
-                            <a class="education_content_title_link" target="_blank" href="https://www.udemy.com/course/javascript_full/">
-                                “The Complete JavaScript + React Course - Zero Result”
-                            </a>
+                </div>
+                <div class="education_block">
+                    <h4 class="education_content_title">Web pages</h4>
+                    <div class="education_content_sites">
+                        <div class="education_content_sites_links">
+                            <!-- <img src="/img&icon/education block/w3schools2.JPG" alt=""> -->
+                            <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <!-- <img src="/img&icon/education block/mdn2" alt=""> -->
+                            <a href="https://developer.mozilla.org" target="_blank">developer.mozilla.org</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <!-- <img src="/img&icon/education block/JSR.jpg" alt=""> -->
+                            <a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <a href="http://htmlbook.ru/" target="_blank">htmlbook.ru</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <!-- <img src="/img&icon/education block/HTML5book.jpg" alt=""> -->
+                            <a href="https://html5book.ru/" target="_blank">html5book.ru</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <a href="https://ravesli.com/" target="_blank">ravesli.com</a>
+                        </div>
+                        <div class="education_content_sites_links">
+                            <a href="https://metanit.com/" target="_blank">metanit.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="education_block">
+                    <h4 class="education_content_title">Books</h4>
+                    <div class="education_content_books">
+                        
+                        <h5 class="education_content_books_title">Tech books </h5>
+                        <div class="education_content_books_tech">
+                            <div class="education_content_book">
+                                <img src="/img&icon/education block/grokking algorithms.jpg" alt="">
+                                <p>Grokking "Algorithms"<p>
+                            </div>
+                            <div class="education_content_book">
+                                <img src="/img&icon/education block/clean code.jpg" alt="">
+                                <p>Robert Martin "Clean Code"</p>
+                            </div>
+                        </div>
+
+                        <h5 class="education_content_books_title" id="education_content_books_title">
+                            Fiction books 
+                            <span id="education_content_books_title_symbol">+</span>
+                        </h5>
+                        <div class="education_content_books_fiction" id="education_content_books_fiction">
+                            <!-- <div class="education_content_book">
+                                <img src="/img&icon/education block/grokking algorithms.jpg" alt="">
+                                <p>Grokking "Algorithms"<p>
+                            </div>
+                            <div class="education_content_book">
+                                <img src="/img&icon/education block/clean code.jpg" alt="">
+                                <p>Robert Martin "Clean Code"</p>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_tech_skills">
+        <a class="anchor" id="tech_skills"></a>
+        <h2><img src="/img&icon/pencil.png"> MY TECH SKILLS</h2>
+        <div class="content_width">
+            <div class="tech_skills_blocks">
+                <h3 class="tech_skills_block-title">Languages</h3>
+                <div class="tech_skills_block-languages"> 
+                    <ul class="tech_skills_block-languages_content-list"> 
+                        <li><img src="/img&icon/tech skills block/united-kingdom.png"> <span>English - intermediate</span></li>
+                        <li><img src="/img&icon/tech skills block/poland.png"> <span>Polish - pre-intermediate</span></li>
+                        
+                    </ul>
+                </div>
+
+                <h3 class="tech_skills_block-title">Technologies</h3>
+                <div class="tech_skills_block-tech_content"> 
+
+                    <div class="tech_skills_block-tech_content_block">
+                        <h4 class="tech_skills_block-tech_content_title">Basics</h4>
+                        <ul class="tech_skills_block-tech_content_list">
+                            <li>Version control, Git</li>
+                            <li>Command line</li>
+                            <li>HTTP protocol basics </li>
+                            <li>REST API </li>
+                            <!-- <li>Programming paradigms</li> -->
+                            <!-- <li>Architecture patterns: SOLID</li> -->
+                            <!-- <li>Design patterns basics</li> -->
+                        </ul>                        
+                    </div>
+
+                    <div class="tech_skills_block-tech_content_block">
+                        <h4 class="tech_skills_block-tech_content_title">
+                            html5, css3
                         </h4>
-                        <div class="education_content_subtitle">
-                            <img src="/img&icon/calendar_icon.png">
-                            <p class="subtitle_date">August 2022 - <span>Currently</span></p>
-                        </div>
+                        <ul class="tech_skills_block-tech_content_list">
+                            <li>Semantics</li>
+                            <li>Flex, grid</li>
+                            <li>Adaptation</li>
+                            <li>Animations</li>                                    
+                        </ul>
                     </div>
                     
-                    <div class="education_block">
-                        <h4 class="education_content_title">YouTube Channels</h4>
-                        <div class="education_youtube_channel_cards">
-                            <a class="youtube_channel_card" href="https://youtube.com/c/ITKAMASUTRA" target="_blank">
-                                <img src="/img&icon/education block/IT-CAMASUTRA.jpg">
-                                <p>IT-KAMASUTRA</p>
-                            </a>
-                            <a class="youtube_channel_card" href="https://youtube.com/c/UlbiTV" target="_blank">
-                                <img src="/img&icon/education block/Ulbi TV.jpg">
-                                <p>UlbiTV</p>
-                            </a>
-                            <a class="youtube_channel_card" href="https://youtube.com/c/EduCatterOfficial" target="_blank">
-                                <img src="/img&icon/education block/EduCatter.jpg">
-                                <p>EduCatter</p>
-                            </a>
-                            <a class="youtube_channel_card" href="https://youtube.com/c/VladilenMinin" target="_blank">
-                                <img src="/img&icon/education block/VladilenMinin.jpg">
-                                <p>Владилен Минин</p>
-                            </a>
-                            <a class="youtube_channel_card" href="https://www.youtube.com/c/FreelancerLifeStyle" target="_blank">
-                                <img src="/img&icon/education block/FreelancerLifeStyle.jpg">
-                                <p>Фрілансер по життю</p>
-                            </a>
-                            <a class="youtube_channel_card" href="https://youtube.com/c/WAYUPIN" target="_blank">
-                                <img src="/img&icon/education block/WATUP.jpg">
-                                <p>WAYUP & Андрей Гаврилов</p>
-                            </a>
-                        </div>    
-                        
-                        <div class="">
-                            <h5 class="education_youtube_channel_title" id="education_youtube_channel_title">
-                                Other channels 
-                                <span id="education_youtube_channel_title_symbol">+</span>
-                            </h5>
-
-                            <div class="education_youtube_channel_other_cards" id="education_youtube_channel_other_cards">
-                                <a class="youtube_channel_card" href="https://youtube.com/c/OnlineTutorials4Designers" target="_blank">
-                                    <img src="/img&icon/education block/Online Tutorials.jpg">
-                                    <p>Online Tutorials</p>
-                                </a>
-                                <a class="youtube_channel_card" href="https://youtube.com/c/ITBEARD" target="_blank">
-                                    <img src="/img&icon/education block/АйТиБорода.jpg">
-                                    <p>АйТиБорода</p>
-                                </a>
-                                <a class="youtube_channel_card" href="https://youtube.com/c/BrainsCloud" target="_blank">
-                                    <img src="/img&icon/education block/BrainsCloud.jpg">
-                                    <p>BrainsCloud</p>
-                                </a>
-                                <a class="youtube_channel_card" href="https://youtube.com/c/Bytepp" target="_blank">
-                                    <img src="/img&icon/education block/Byte++.jpg">
-                                    <p>Byte++</p>
-                                </a>
-                                <a class="youtube_channel_card" href="https://youtube.com/c/SimpleCodeIT" target="_blank">
-                                    <img src="/img&icon/education block/SimpleCode.jpg">
-                                    <p>#SimpleCode</p>
-                                </a>
-                                <!-- <a class="youtube_channel_card" href="https://youtube.com/c/ilyin_it" target="_blank">
-                                    <img src="/img&icon/education block/Александр Ильин про IT.jpg">
-                                    <p>Александр Ильин про IT</p>
-                                </a> -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="education_block">
-                        <h4 class="education_content_title">Web pages</h4>
-                        <div class="education_content_sites">
-                            <div class="education_content_sites_links">
-                                <!-- <img src="/img&icon/education block/w3schools2.JPG" alt=""> -->
-                                <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <!-- <img src="/img&icon/education block/mdn2" alt=""> -->
-                                <a href="https://developer.mozilla.org" target="_blank">developer.mozilla.org</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <!-- <img src="/img&icon/education block/JSR.jpg" alt=""> -->
-                                <a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <a href="http://htmlbook.ru/" target="_blank">htmlbook.ru</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <!-- <img src="/img&icon/education block/HTML5book.jpg" alt=""> -->
-                                <a href="https://html5book.ru/" target="_blank">html5book.ru</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <a href="https://ravesli.com/" target="_blank">ravesli.com</a>
-                            </div>
-                            <div class="education_content_sites_links">
-                                <a href="https://metanit.com/" target="_blank">metanit.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education_block">
-                        <h4 class="education_content_title">Books</h4>
-                        <div class="education_content_books">
-                            
-                            <h5 class="education_content_books_title">Tech books </h5>
-                            <div class="education_content_books_tech">
-                                <div class="education_content_book">
-                                    <img src="/img&icon/education block/grokking algorithms.jpg" alt="">
-                                    <p>Grokking "Algorithms"<p>
-                                </div>
-                                <div class="education_content_book">
-                                    <img src="/img&icon/education block/clean code.jpg" alt="">
-                                    <p>Robert Martin "Clean Code"</p>
-                                </div>
-                            </div>
-
-                            <h5 class="education_content_books_title" id="education_content_books_title">
-                                Fiction books 
-                                <span id="education_content_books_title_symbol">+</span>
-                            </h5>
-                            <div class="education_content_books_fiction" id="education_content_books_fiction">
-                                <!-- <div class="education_content_book">
-                                    <img src="/img&icon/education block/grokking algorithms.jpg" alt="">
-                                    <p>Grokking "Algorithms"<p>
-                                </div>
-                                <div class="education_content_book">
-                                    <img src="/img&icon/education block/clean code.jpg" alt="">
-                                    <p>Robert Martin "Clean Code"</p>
-                                </div> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section_tech_skills">
-            <a class="anchor" id="tech_skills"></a>
-            <h2><img src="/img&icon/pencil.png"> MY TECH SKILLS</h2>
-            <div class="content_width">
-                <div class="tech_skills_blocks">
-                    <div class="tech_skills_block-languages"> 
-                        <h3 class="tech_skills_block-title">Languages</h3>
-                        <ul class="tech_skills_block-languages_content-list"> 
-                            <li><img src="/img&icon/tech skills block/united-kingdom.png"> <span>English - intermediate</span></li>
-                            <li><img src="/img&icon/tech skills block/poland.png"> <span>Polish - pre-intermediate</span></li>
-                            
+                    <div class="tech_skills_block-tech_content_block">
+                        <h4 class="tech_skills_block-tech_content_title">JavaScript</h4>
+                        <ul class="tech_skills_block-tech_content_list">
+                            <li>Data types</li>
+                            <li>Conditional and logical operators </li>
+                            <li>Functions</li>
+                            <li>Arrays and array methods </li>
+                            <li>Objects and methods of object</li>
+                            <!-- <li>Constructor, “new” operator </li> -->
+                            <!-- <li>Prototype</li> -->
+                            <!-- <li>Classes</li> -->
+                            <!-- <li>Asynchronous operations: callbacks, promises, async functions </li> -->
+                            <!-- <li>Event loop </li> -->
+                            <li>DOM tree </li>
                         </ul>
-                    </div>
+                    </div> 
 
-                    <div class="tech_skills_block-tech">
-                        <h3 class="tech_skills_block-title">Technologies</h3>
-                        <div class="tech_skills_block-tech_content"> 
-                            
-                            <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">Basics</h4>
-                                <ul class="tech_skills_block-tech_content_list">
-                                    <li>Version control, Git</li>
-                                    <li>Command line</li>
-                                    <li>HTTP protocol basics </li>
-                                    <li>REST API </li>
-                                    <!-- <li>Programming paradigms</li> -->
-                                    <!-- <li>Architecture patterns: SOLID</li> -->
-                                    <!-- <li>Design patterns basics</li> -->
-                                </ul>                        
-                            </div>
-
-                            <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">
-                                    html5, css3
-                                    <!-- <p class="tech_skills_block-tech_content_subtitle">at the site creation level</p> -->
-                                </h4>
-                                <ul class="tech_skills_block-tech_content_list">
-                                    <li>Semantics</li>
-                                    <li>Flex, grid</li>
-                                    <li>Adaptation</li>
-                                    <li>Animations</li>                                    
-                                </ul>
-                            </div>
-                            
-                            <div class="tech_skills_block-tech_content_block">
-                                <h4 class="tech_skills_block-tech_content_title">JavaScript</h4>
-                                <ul class="tech_skills_block-tech_content_list">
-                                    <li>Data types</li>
-                                    <li>Conditional and logical operators </li>
-                                    <li>Functions</li>
-                                    <li>Arrays and array methods </li>
-                                    <li>Objects and methods of object</li>
-                                    <!-- <li>Constructor, “new” operator </li> -->
-                                    <!-- <li>prototype</li> -->
-                                    <!-- <li>classes</li> -->
-                                    <!-- <li>asynchronous operations: callbacks, promises, async functions </li> -->
-                                    <!-- <li>event loop </li> -->
-                                    <li>DOM tree </li>
-                                </ul>
-                            </div>  
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section class="section_experience">
-            <a class="anchor" id="experience"></a>
-            <h2><img src="/img&icon/work_experience.png">EXPERIENCE</h2>
-            <div class="content_width">
-                <div class="section_experience_info">
+        </div>
+    </section>
+
+    <section class="section_experience">
+        <a class="anchor" id="experience"></a>
+        <h2><img src="/img&icon/work_experience.png">EXPERIENCE</h2>
+        <div class="content_width">
+            <div class="section_experience_info">
+                
+                <div class="section_experience_info_work">
+                    <div class="section_experience_info_work_block-link">
+                        <a class="section_experience_info_work_link" href="http://niitzi.by/index.php?lang=en" target="_blank"  title="http://niitzi.by/index.php?lang=en">Research Institute of Technical Information Protection</a>
+                    </div>
+                    <p><span>Position:</span> Intern C++ Developer;</p>
+                    <p><span>Duration:</span> 1 month (November 2021);</p>
+                    <span>I did:</span>
+                    <ul class="section_experience_info_work_list">
+                        <li>studied IDE Qt Creator and MS-SQL;</li>
+                        <li>
+                            developed a course project on the subject of "databases" using C# 
+                            (<a class="section_experience_info_work_list_link" href="https://github.com/Nikitosikus01" target="_blank" title="https://github.com/Nikitosikus01">check out my GitHub</a>);
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section_experience_info_work">
+                    <div class="section_experience_info_work_block-link">
+                        <a class="section_experience_info_work_link" href="https://homy.by/" target="_blank" title="https://homy.by/">Online Store</a>
+                    </div>
+                    <p><span>Position:</span> Intern html coder;</p>
+                    <p><span>Duration:</span> 4 months (December 2021 - March 2022);</p>
+                    <span>I did:</span>
+                    <ul class="section_experience_info_work_list">
+                        <li>studied and worked with HTML5, CSS3;</li>
+                        <li>worked with Git;</li>
+                        <li>got an idea about REST API and HTTP;</li>
+                    </ul>
+                </div>
+
+                <div class="section_experience_info_work">
+                    <div class="section_experience_info_work_block-link">
+                        <a class="section_experience_info_work_link" href="https://github.com/Nikitosikus01" target="_blank" title="https://github.com/Nikitosikus01">Projects by self-education (check out my github):</a>
+                    </div>
                     
-                    <div class="section_experience_info_work">
-                        <div class="section_experience_info_work_block-link">
-                            <a class="section_experience_info_work_link" href="http://niitzi.by/index.php?lang=en" target="_blank"  title="http://niitzi.by/index.php?lang=en">Research Institute of Technical Information Protection</a>
-                        </div>
-                        <p><span>Position:</span> Intern C++ Developer;</p>
-                        <p><span>Duration:</span> 1 month (November 2021);</p>
-                        <span>I did:</span>
-                        <ul class="section_experience_info_work_list">
-                            <li>studied IDE Qt Creator and MS-SQL;</li>
-                            <li>
-                                developed a course project on the subject of "databases" using C# 
-                                (<a class="section_experience_info_work_list_link" href="https://github.com/Nikitosikus01" target="_blank" title="https://github.com/Nikitosikus01">check out my GitHub</a>);
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section_experience_info_work">
-                        <div class="section_experience_info_work_block-link">
-                            <a class="section_experience_info_work_link" href="https://homy.by/" target="_blank" title="https://homy.by/">Online Store</a>
-                        </div>
-                        <p><span>Position:</span> Intern html coder;</p>
-                        <p><span>Duration:</span> 4 months (December 2021 - March 2022);</p>
-                        <span>I did:</span>
-                        <ul class="section_experience_info_work_list">
-                            <li>studied and worked with HTML5, CSS3;</li>
-                            <li>worked with Git;</li>
-                            <li>got an idea about REST API and HTTP;</li>
-                        </ul>
-                    </div>
-
-                    <div class="section_experience_info_work">
-                        <div class="section_experience_info_work_block-link">
-                            <a class="section_experience_info_work_link" href="https://github.com/Nikitosikus01" target="_blank" title="https://github.com/Nikitosikus01">Projects by self-education (check out my github):</a>
-                        </div>
-                        
-                        <ul class="section_experience_info_work_list">
-                            <li>
-                                <a class="section_experience_info_work_list_link" href="https://www.codewars.com/users/Code%20boy" target="_blank" title="https://www.codewars.com/users/Code%20boy">
-                                    CodeWars;
-                                </a>
-                            </li>
-                            <li>Tasks from the Udemy course; </li>
-                            <li>I have implemented the algorithms from the book "Grokking Algorithms" in JavaScript; </li>
-                            <li>Marafon from Vladilen Minin; </li>
-                            <li>Marafon from WayUp school; </li>
-                        </ul> 
-                    </div>
-
+                    <ul class="section_experience_info_work_list">
+                        <li>
+                            <a class="section_experience_info_work_list_link" href="https://www.codewars.com/users/Code%20boy" target="_blank" title="https://www.codewars.com/users/Code%20boy">
+                                CodeWars;
+                            </a>
+                        </li>
+                        <li>Tasks from the Udemy course; </li>
+                        <li>I have implemented the algorithms from the book "Grokking Algorithms" in JavaScript; </li>
+                        <li>Marafon from Vladilen Minin; </li>
+                        <li>Marafon from WayUp school; </li>
+                    </ul> 
                 </div>
-            </div>
-        </section>
-
-        <!-- <section class="section_projects" id="My_projects">
-            <h2><img src="/img&icon/work_experience.png">hobbies</h2>
-            <div class="content_width">
 
             </div>
-        </section> -->
+        </div>
+    </section>
 
-        <footer>
-                <ul>
-                    <li><a href="https://t.me/niiikitoshka" title="" target="_blank">Telegram</a></li>
-                    <li><a href="mailto:nikitamishkuro123@gmail.com" title="" target="_blank">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/nikita-mishkuro-b03657206/" title="" target="_blank">LinkedIn</a></li>
-                    <!-- <li><a href="" title="" target="_blank">Facebook</a></li> -->
-                </ul>
-                <!-- сделать кнопочку при нажатии отображается график частоты использования соц сетей -->
-                <p>
-                    Warsaw 2022
-                </p>
-        </footer>
-    <!-- </section> -->
+    <!-- <section class="section_projects" id="My_projects">
+        <h2><img src="/img&icon/work_experience.png">hobbies</h2>
+        <div class="content_width">
+
+        </div>
+    </section> -->
+
+    <footer>
+            <ul>
+                <li><a href="https://t.me/niiikitoshka" title="" target="_blank">Telegram</a></li>
+                <li><a href="mailto:nikitamishkuro123@gmail.com" title="" target="_blank">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/nikita-mishkuro-b03657206/" title="" target="_blank">LinkedIn</a></li>
+                <!-- <li><a href="" title="" target="_blank">Facebook</a></li> -->
+            </ul>
+            <!-- сделать кнопочку при нажатии отображается график частоты использования соц сетей -->
+            <p class="footer_city-year">
+                Warsaw 2022
+            </p>
+    </footer>
     <script src="/JS/script.js"></script>
 </body>
 

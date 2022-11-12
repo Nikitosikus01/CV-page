@@ -4,6 +4,9 @@
 
 
 @media screen and (max-width: 1250px) {
+    .content_width {
+        max-width: 75%;
+    }
     .section_myinfo_motivation-block {
         flex-direction: column;
     }
@@ -11,10 +14,12 @@
 
 
 @media screen and (max-width: 1050px) {
+    .content_width {
+        max-width: 80%;
+    }
     .navbar_link span {
         display: none;
     }
-
     .section_myinfo_motivation-block img {
         height: 250px;
         width: 250px;
@@ -32,36 +37,35 @@
 
 
 @media screen and (max-width: 850px) {
-    /* .navbar_link {
-        display: none;
+    .content_width {
+        max-width: 85%;
     }
-    .navbar_invisibility {
-        display: block;
+
+    .navbar{
+        display: none;
     }
     .menu_phone {
         display: block;
-    } */
-    
-    .navbar_link {
-        padding: 15px 15px;
     }
-    
+    .navbar_invisibility {
+        display: none;
+    }
 
     .youtube_channel_card {
         padding: 25px 15px;
         margin: 0px 0px 20px 0px;
-        font-size: 16px;
     }
     .youtube_channel_card img {
         width: 50px;
         height: 50px;
     }
+
     .education_content_book img {
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 350px;
     }
     .education_content_book p {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
     }
 }
@@ -69,28 +73,32 @@
 
 @media screen and (max-width: 700px) {
     
-    .navbar_link {
-        padding: 15px 10px;
+    .content_width {
+        max-width: 90%;
     }
-
+   
+    body{
+        font-size: 17px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .header_title h1{
+        font-size: 40px;
+        margin: 25px 0px;
+    }
     .header_button_line {
         flex-direction: column;
         margin: 30px 0px 0px 0px;
     }
     .header_button_line a {
-        font-size: 19px;
+        font-size: 20px;
         padding: 10px 30px;
         margin: 10px 20px;
     }
-    body{
-        font-size: 17px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .header_title h1{
-        margin: 25px 0px;
-        font-size: 40px;
+
+    .navbar_link {
+        
     }
 
     .modal-window_contacts {
@@ -108,12 +116,14 @@
     }
 
     .paragraph_name {
-        font-size: 19px;
+        font-size: 20px;
     }
+
     .section_myinfo_motivation-block img { 
         height: 200px;
         width: 200px;
     }
+
     .section_myinfo_abilities_skills li {
         font-size: 18px;
     }
@@ -127,42 +137,133 @@
         padding-bottom: 20px;
         font-size: 20px;
     }
-    .tech_skills_block-tech_content_title {
-        text-align: center;
+    .education_youtube_channel_title {
+        font-size: 18px;
     }
+    .education_content_sites_links a {
+        font-size: 17px;
+    }
+    .education_content_books_title {
+        font-size: 18px;
+    }
+
+    .education_content_book img {
+        width: 200px;
+        height: 300px;
+    }
+    .education_content_book p {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
     .tech_skills_block-languages_content-list {
+        padding: 0px;
+    }
+
+    .tech_skills_block-tech_content_title {
+        font-size: 18px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .content_width {
+        padding: 10px;
+    }
+
+    .section_myinfo_abilities {
+        padding-bottom: 40px;
+    }
+
+    .section_myinfo_motivation-block {
+        padding: 20px 0px 80px 0px;
+    }
+    
+    .education_block {
+        padding: 15px;
+    }
+    .education_block:first-child {
+        margin-top: 30px;
+    }
+
+    .youtube_channel_card {
+        box-sizing: border-box;
+    }
+    .youtube_channel_card img {
+        display: none;
+    }
+    .youtube_channel_card p {
+        font-size: 15px;
         padding: 10px 0px;
     }
+
+    .tech_skills_block-languages {
+        margin-bottom: 50px;
+    }
+
+    .section_experience_info_work:first-child {
+        margin-top: 30px;
+    }
+
+    .footer_city-year {
+        text-align: center;
+    }
 }
 
 
-@media screen and (max-width: 600px) {
 
-    .navbar_link {
-        padding: 15px 10px;
+@media screen and (max-width: 350px) {
+
+    .content_width {
+        padding: 0px;
+    }
+
+    .header_blocks {
+        margin: 30px 0px;
+    }
+
+    .header_title h1{
+        font-size: 35px;
+        margin: 25px 0px;
+    }
+
+    .header_button_line a {
         font-size: 19px;
+        padding: 8px 20px;
     }
-    .content_width{
-        padding: 20px;
-        max-width: 75%;
-    }
-}
 
-
-@media screen and (max-width: 525px) {
-    .navbar_link {
-        font-size: 18px;
+    .section_myinfo_motivation-block img {
+        height: 170px;
+        width: 170px;
     }
-    .content_width{
-        padding: 20px;
-        max-width: 80%;
-    }
-}
 
-
-@media screen and (max-width: 400px) {
-    .navbar_link {
-        padding: 0px 8px;
-        font-size: 18px;
+    .education_block {
+        padding: 10px;
     }
+    .education_content_sites_links a {
+        padding: 7px 20px;
+    }
+
+    .section_experience_info_work {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .tech_skills_block-languages {
+        padding: 10px;
+    }
+    .tech_skills_block-languages li {
+        padding: 8px;
+    }
+    .tech_skills_block-languages li span {
+        padding-left: 8px;
+    }
+    
+    .tech_skills_block-tech_content_block {
+        padding: 10px;
+    }
+
 }
