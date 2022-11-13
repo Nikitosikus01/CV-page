@@ -231,15 +231,17 @@ h2 img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 15px;
 }
 .modal-window_contacts_links a {
+    text-align: center;
     text-decoration: none;
     border-radius: 15px;
     color: #000;
     margin: 10px;
     padding: 5px 30px;
-    transition: .4s linear;
+    transition: .3s linear;
 }
 .modal-window_contacts_links a:hover {
     color: lightblue;
@@ -275,23 +277,23 @@ h2 img {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 .modal-window_PDF_buttons a {
     text-align: center;
     text-decoration: none;
     border-radius: 15px;
-    color: #fff;
-    background-color: #000;
+    color: #000;
 
     width: 150px;
     padding: 7px 15px;
     margin: 5px;
-    transition: .2s linear;
+    transition: .3s linear;
 }
 .modal-window_PDF_buttons a:hover {
-    cursor: pointer;
     color: lightblue;
+    box-shadow: 350px 0 0 0 rgb(0, 0, 0) inset;
+
 }
 
 
