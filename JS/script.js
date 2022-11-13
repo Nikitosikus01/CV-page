@@ -1,21 +1,15 @@
 
 
 
-const menuPhone = document.getElementById('menu_phone');
-const blockNavbar = document.getElementById('navbar');
-const navInvis = document.getElementById('navbar_invisibility');
+const btnPhoneMenu = document.getElementById('button_phone_menu');
+const phoneNavbar = document.getElementById('phone_navbar');
 
-// попробовать реализовать через раскомментирование
-menuPhone.addEventListener('click', () => {
+btnPhoneMenu.addEventListener('click', () => {
     
-    if(getComputedStyle(navInvis).maxWidth == '850px'){
-    
-    }
-
-    if(getComputedStyle(navInvis).display == 'none'){
-        navInvis.style.display = 'block';
+    if(getComputedStyle(phoneNavbar).display == 'none'){
+        phoneNavbar.style.display = 'block';
     } else {
-        navInvis.style.display = 'none';
+        phoneNavbar.style.display = 'none';
     }
 })
 
@@ -99,10 +93,10 @@ const fictionBooksSymbol = document.getElementById('education_content_books_titl
 buttonFictionBooks.addEventListener('click', () => {
     // change + to -
 
-    if (otherCardsSymbol.textContent == '+') {
-        otherCardsSymbol.innerHTML = '-';
+    if (fictionBooksSymbol.textContent == '+') {
+        fictionBooksSymbol.innerHTML = '-';
     } else {
-        otherCardsSymbol.innerHTML = '+';
+        fictionBooksSymbol.innerHTML = '+';
     }
 
     if (getComputedStyle(fictionBooks).display == 'none'){

@@ -37,18 +37,13 @@
 
 
 @media screen and (max-width: 850px) {
+
     .content_width {
         max-width: 85%;
     }
-
-    .navbar{
-        display: none;
-    }
-    .menu_phone {
-        display: block;
-    }
-    .navbar_invisibility {
-        display: none;
+    
+    .navbar_link {
+        padding: 15px;
     }
 
     .youtube_channel_card {
@@ -73,6 +68,18 @@
 
 @media screen and (max-width: 700px) {
     
+    .navbar_invisibility {
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .button_phone_menu {
+        display: block;
+    }
+
+
+
     .content_width {
         max-width: 90%;
     }
@@ -95,10 +102,6 @@
         font-size: 20px;
         padding: 10px 30px;
         margin: 10px 20px;
-    }
-
-    .navbar_link {
-        
     }
 
     .modal-window_contacts {
