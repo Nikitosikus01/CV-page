@@ -615,6 +615,7 @@ h2 img {
     width: 25px;
     height: 25px;   
 }
+
 .tech_skills_block-tech_content_block {
     padding: 25px;
     margin-bottom: 40px;
@@ -632,7 +633,7 @@ h2 img {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 .tech_skills_block-tech_content_list li {
     /* background: rgb(190, 190, 190); */
@@ -645,7 +646,6 @@ h2 img {
 
     position: relative;
     z-index: 1;
-    box-shadow: 0px 0px 0px 0px;
     top: 0;
     left: 0;
     transition: .1s linear;
@@ -655,6 +655,37 @@ h2 img {
     top: -4px;
     left: -4px;
     cursor: pointer;
+}
+
+.list_color_basics li {
+    background: rgb(238, 238, 238);
+}
+.list_color_basics li:hover {
+    background: gray;
+    box-shadow: 2px 2px  gray, 3px 3px #000;
+}
+
+.list_color_htmlcss li {
+    background: rgb(210, 227, 255);
+}
+.list_color_htmlcss li:hover {
+    background: rgb(0, 94, 255);
+    box-shadow: 2px 2px  rgb(0, 94, 255), 3px 3px #000;
+}
+.list_color_htmlcss li:first-child {
+    background: rgb(255, 222, 210);
+}
+.list_color_htmlcss li:first-child:hover {
+    background: orangered;
+    box-shadow: 2px 2px  orangered, 3px 3px #000;
+}
+
+.list_color_JS li {
+    background: rgb(255, 255, 210);
+}
+.list_color_JS li:hover {
+    background: yellow;
+    box-shadow: 2px 2px  yellow, 3px 3px #000;
 }
 
 
