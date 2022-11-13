@@ -1,15 +1,15 @@
 
 
 
-const btnPhoneMenu = document.getElementById('button_phone_menu');
-const phoneNavbar = document.getElementById('phone_navbar');
+const btnMobileMenu = document.getElementById('navbar_mobile-elements_button');
+const mobileMenu = document.getElementById('navbar_mobile-elements_links');
 
-btnPhoneMenu.addEventListener('click', () => {
+btnMobileMenu.addEventListener('click', () => {
     
-    if(getComputedStyle(phoneNavbar).display == 'none'){
-        phoneNavbar.style.display = 'block';
+    if(getComputedStyle(mobileMenu).display == 'none'){
+        mobileMenu.style.display = 'block';
     } else {
-        phoneNavbar.style.display = 'none';
+        mobileMenu.style.display = 'none';
     }
 })
 
