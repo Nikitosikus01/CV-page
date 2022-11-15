@@ -11,7 +11,7 @@ btnMobileMenu.addEventListener('click', () => {
     } else {
         mobileMenu.style.display = 'none';
     }
-})
+});
 
 
 
@@ -34,7 +34,7 @@ buttonContacts.addEventListener('click', () => {
     // else {
     //     modalWindowContacts.style.display = 'none';
     // }
-})
+});
 
 buttonPDFCV.addEventListener('click', () => {
     if(getComputedStyle(modalWindowPDFCV).display == 'none'){

@@ -13,15 +13,22 @@
 }
 
 
+
+
 @media screen and (max-width: 1050px) {
     .content_width {
         max-width: 80%;
     }
+    
+    .navbar_link {
+        padding: 15px;
+    }
+
     .section_myinfo_motivation-block img {
         height: 250px;
         width: 250px;
     }
-    .section_myinfo_abilities_skills {
+    .soft_skills_block-abilities {
         flex-direction: column;
     }
     .tech_skills_block-languages_content-list {
@@ -31,14 +38,25 @@
         margin: 50px 30px;
     }
 
-    .section_experience_info_work_link {
-        text-decoration: underline;
-    }
 
 }
 
 
+
+
 @media screen and (max-width: 850px) {
+
+    .navbar_invisibility {
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .block_navbar_mobile {
+        display: block;
+    }
+
+
 
     .content_width {
         max-width: 85%;
@@ -61,10 +79,6 @@
         box-shadow: 350px 0 0 0 rgb(0, 0, 0) inset;
     }
 
-    .navbar_link {
-        padding: 15px;
-    }
-
     .youtube_channel_card {
         padding: 25px 15px;
         margin: 0px 0px 20px 0px;
@@ -85,18 +99,13 @@
 }
 
 
+
+
+
+
 @media screen and (max-width: 700px) {
     
-    .navbar_invisibility {
-        display: none;
-    }
-    .navbar{
-        display: none;
-    }
-    .block_navbar_mobile {
-        display: block;
-    }
-
+    
 
 
     .content_width {
@@ -145,13 +154,20 @@
         width: 200px;
     }
 
-    .section_myinfo_abilities_skills li {
+    .tech_skills_block-title {
+        font-size: 20px;
+    }
+    .skill {
         font-size: 18px;
     }
-    .section_myinfo_abilities_skills li img { 
+    .skill img { 
         height: 35px;
         width: 35px;
         padding: 0px 10px;
+    }
+
+    .section_experience_info_work_link {
+        font-size: 20px;
     }
 
     .education_content_title {
@@ -185,9 +201,13 @@
         font-size: 18px;
     }
     
-    
-    
+    .soft_skills_block-title {
+        font-size: 20px;
+    }
+
 }
+
+
 
 
 @media screen and (max-width: 500px) {
@@ -196,7 +216,7 @@
         padding: 10px;
     }
 
-    .section_myinfo_abilities {
+    .soft_skills_block {
         padding-bottom: 40px;
     }
 
@@ -222,10 +242,6 @@
         padding: 10px 0px;
     }
 
-    .tech_skills_block-languages {
-        margin-bottom: 50px;
-    }
-
     .section_experience_info_work:first-child {
         margin-top: 30px;
     }
@@ -235,6 +251,8 @@
         font-size: 14px;
     }
 }
+
+
 
 
 
