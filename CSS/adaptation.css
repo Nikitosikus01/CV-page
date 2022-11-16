@@ -79,6 +79,10 @@
         box-shadow: 350px 0 0 0 rgb(0, 0, 0) inset;
     }
 
+    .tech_skills_block-languages_list {
+        flex-direction: column;
+    }
+
     .youtube_channel_card {
         padding: 25px 15px;
         margin: 0px 0px 20px 0px;
@@ -224,6 +228,10 @@
         padding: 20px 0px 80px 0px;
     }
     
+    .tech_skills_block-languages {
+        margin-top: 30px;
+    }
+
     .education_block {
         padding: 15px;
     }
