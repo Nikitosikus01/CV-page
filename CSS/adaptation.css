@@ -317,7 +317,9 @@
     .tech_skills_block-languages li span {
         padding-left: 8px;
     }
-    
+    .tech_skills_block-languages_list {
+        padding: 15px 0px;
+    }
     .tech_skills_block-tech_content_block {
         padding: 10px;
     }
