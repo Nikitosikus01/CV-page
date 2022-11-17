@@ -62,8 +62,11 @@
         max-width: 85%;
     }
 
+    .modal-window_contacts {
+        height: 280px;
+    }
     .modal-window_contacts_links {
-        padding: 15px;
+        padding: 5px;
     }
     .modal-window_contacts_links a {
         text-align: center;
@@ -132,13 +135,15 @@
     }
     .header_button_line a {
         font-size: 20px;
-        padding: 10px 30px;
+        padding: 6px 40px;
         margin: 10px 20px;
     }
 
     .modal-window_contacts {
         width: 300px;
-        height: 275px;
+    }
+    .modal-window_contacts_links a {
+        font-size: 16px;
     }
     .modal-window_PDF {
         width: 250px;
@@ -246,8 +251,6 @@
         box-sizing: border-box;
         padding: 10px;
     }
-    .youtube_channel_card img {
-    }
     .youtube_channel_card p {
         font-size: 15px;
         padding: 10px 0px;
@@ -280,18 +283,18 @@
 
     .header_button_line a {
         font-size: 19px;
-        padding: 8px 20px;
+        padding: 4px 30px;
     }
 
-    .modal-window_contacts {
-        width: 240px;
-        height: 240px;
-    }
     .modal-window_contacts_links {
         padding: 5px 15px;
     }
     .modal-window_contacts_links a {
         padding: 5px 0px;
+    }
+    .modal-window_contacts {
+        width: 250px;
+        height: 260px;
     }
 
     .section_myinfo_motivation-block img {
@@ -324,4 +327,7 @@
         padding: 10px;
     }
 
+    .footer_srcond-line {
+        font-size: 15px;
+    }
 }

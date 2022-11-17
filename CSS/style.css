@@ -173,26 +173,27 @@ h2 img {
     align-items: center;
     width: 80px;
     height: 40px;
-    padding: 20px 50px;
+    padding: 15px 70px;
     margin: 0px 20px;
 
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
     font-size: 24px;
-    border: solid 3px;
-    border-radius: 8px;
+    border: solid 2px;
+    border-radius: 50px;
 
     position: relative;
     box-shadow: 2px 2px white, 4px 4px #000;
-    top: -5px;
-    left: -5px;
-    transition: .2s linear;
+    top: -4px;
+    left: -4px;
+    transition: .1s linear;
 }
 .header_button_line a:hover{
+    cursor: pointer;
+    border: solid 2px #000;
     color: #fff;
     background-color: rgba(0, 0, 0);
-    cursor: pointer;
 }
 .header_button_line a:active{
     box-shadow: 0px 0px 0px 0px;
@@ -249,7 +250,7 @@ h2 img {
     border-radius: 15px;
     color: #000;
     border: rgba(0, 0, 0, 0.2) solid 1px;
-    margin: 10px;
+    margin: 5px;
     padding: 5px 30px;
     transition: .3s linear;
 }
@@ -750,21 +751,30 @@ footer ul {
 footer ul li {
     list-style-type: none;
 }
-footer ul li a {
+.footer_link {
     color: white;
     text-decoration: none;
     padding: 15px;
 }
-footer ul li a:hover{
+.footer_link:hover{
     text-decoration: underline;
 }
-
-footer p {
-    margin: 0;
-    padding: 15px;
-    text-align: right;
-}
-
-.footer_city-year {
+.footer_srcond-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
+    padding: 20px;
+    margin: 0;
+}
+.footer_srcond-line a {
+    background-color: #fff;
+    color: #000;
+    padding: 3px 20px;
+    font-weight: 500;
+    border-radius: 40px;
+} 
+.footer_srcond-line a:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
 }
