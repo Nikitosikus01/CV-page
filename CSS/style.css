@@ -431,11 +431,10 @@ h2 img {
 }
 .tech_skills_block-tech_list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    /* flex-wrap: wrap; */
     padding: 25px;
     margin: 0;
 }
@@ -486,10 +485,10 @@ h2 img {
     text-decoration: none; */
     font-size: 22px;
     font-weight: 600;
+    font-style: italic;
     color: rgba(0, 0, 0, 1);
 }
 .section_experience_info_work_link:hover {
-    /* font-style: italic; */
     color: rgba(0, 0, 0, 0.8);
 }
 .section_experience_info_work_list {
@@ -505,9 +504,10 @@ h2 img {
     font-weight: 600;
     font-style: italic;
     color: #000;
+    text-decoration: underline;
 }
 .section_experience_info_work_list_link:hover {
-    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 
