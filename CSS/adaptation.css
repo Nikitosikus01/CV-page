@@ -10,12 +10,30 @@
     .section_myinfo_motivation-block {
         flex-direction: column;
     }
+
+    .navbar_invisibility {
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .block_navbar_mobile {
+        display: block;
+    }
+
+    .header_blocks {
+        padding: 158px 0px 60px 0px;
+    }
+
 }
 
 
 
 
 @media screen and (max-width: 1050px) {
+
+    
+
     .content_width {
         max-width: 80%;
     }
@@ -45,17 +63,6 @@
 
 
 @media screen and (max-width: 850px) {
-
-    .navbar_invisibility {
-        display: none;
-    }
-    .navbar{
-        display: none;
-    }
-    .block_navbar_mobile {
-        display: block;
-    }
-
 
 
     .content_width {

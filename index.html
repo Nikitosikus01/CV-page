@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar_invisibility" id="navbar_invisibility"></nav>
+    <!-- <nav class="navbar_invisibility" id="navbar_invisibility"></nav> -->
 
     <div class="block_navbar_mobile">  
         <div class="block_navbar_mobile-elements">
@@ -31,13 +31,16 @@
     
             <nav class="navbar_mobile-elements_links" id="navbar_mobile-elements_links">
                 <ul>
+                    <a class="navbar_mobile-elements_link" href="#first_screen">&#8679 &#8679 &#8679</a> 
                     <a class="navbar_mobile-elements_link" href="#about_me">About me</a>
                     <a class="navbar_mobile-elements_link" href="#tech_skills">Tech skills</a>
                     <a class="navbar_mobile-elements_link" href="#experience">Experience</a>
                     <a class="navbar_mobile-elements_link" href="#projects">Projects</a>
                     <a class="navbar_mobile-elements_link" href="#education">Education</a>
+                    <a class="navbar_mobile-elements_link" href="#">Events</a>
                     <a class="navbar_mobile-elements_link" href="#soft_skills">Soft skills</a>
-                    <a class="navbar_mobile-elements_link" href="#first_screen">&#8679 &#8679 &#8679</a> 
+                    <a class="navbar_mobile-elements_link" href="#">Hobbies</a>
+                    <a class="navbar_mobile-elements_link" href="#">Interests</a>
                     <!-- <span>Back up </span> -->
                 </ul>
             </nav>
@@ -45,12 +48,28 @@
     </div>
     
 
+    <nav class="navbar" id="navbar">
+        <ul>
+            <a class="navbar_link" href="#first_screen">&#8679 &#8679 &#8679</a>
+            <a class="navbar_link" href="#about_me">About me</a>
+            <a class="navbar_link" href="#tech_skills">Tech skills</a>
+            <a class="navbar_link" href="#experience">Experience</a>
+            <a class="navbar_link" href="#projects">Projects</a>
+            <a class="navbar_link" href="#education">Education</a>
+            <a class="navbar_link" href="#">Events</a>
+            <a class="navbar_link" href="#soft_skills">Soft skills</a>
+            <a class="navbar_link" href="#">Hobbies</a>
+            <a class="navbar_link" href="#">Interests</a>
+        </ul>
+    </nav>
+
     <header class="header" id="first_screen">
         <div class="header_blocks">
             <div class="header_title">
                 <h1>
                     I'm Niki -<br>
-                    Frontend JavaScript Developer
+                    <!-- Frontend -->
+                    JavaScript Developer
                 </h1>
             </div>
 
@@ -58,7 +77,12 @@
                 <a id="button_contacts">
                     Contacts
                 </a>
+                <a id="button_PDFCV">
+                    <span class="button_text">PDF CV</span>
+                </a>
             </div>
+            <!-- <div class="header_button_line">
+            </div> -->
         </div>
  
         <div class="modal-window_backlayer" id="backlayer_contacts">
@@ -90,17 +114,7 @@
 
     </header>
     
-    <nav class="navbar" id="navbar">
-        <ul>
-            <a class="navbar_link" href="#first_screen">&#8679 &#8679 &#8679</a>
-            <a class="navbar_link" href="#about_me">About me</a>
-            <a class="navbar_link" href="#tech_skills">Tech skills</a>
-            <a class="navbar_link" href="#experience">Experience</a>
-            <a class="navbar_link" href="#projects">Projects</a>
-            <a class="navbar_link" href="#education">Education</a>
-            <a class="navbar_link" href="#soft_skills">Soft skills</a>
-        </ul>
-    </nav>
+    
 
 
 
@@ -146,14 +160,28 @@
                     <ul class="tech_skills_block-tech_list">
                         <li class="">HTML5</li>
                         <li class="">CSS3</li>
-                        <li class="">JavaScript</li>
+                        <li class="">JavaScript (ES6)</li>
                         <!-- <li class="">JQuery</li> -->
-                        <li class="">React</li>
+                        <li class="">React.js</li>
                         <!-- <li class="">Redux</li> -->
-                        <!-- <li class="">WebPack</li> -->
-                        <!-- <li class="">FireBase</li> -->
+                        <li class="">Node.js</li>
+                        <li class="">Express.js</li>
                         <li class="">Git</li>
-                        <li class="">Vs code</li>
+                        <!-- <li class="">FireBase</li> -->
+                        <li class="">MS-SQL</li>
+                        <li class="">MongoDB</li>
+                        <!-- <li class="">WebPack</li> -->
+                        <li class="">VS Code</li>
+                        <li class="">Visual Studio 2019</li>
+                        <li class="">Windows</li>
+                        <li class="">Linux (Ubuntu)</li>
+                        <li class="">C#</li>
+                        <li class="">C++</li>
+                        <li class="">QT Creator</li>
+                        <li class="">MS Office 2019</li>
+                        <li class="">Windows Server 2008</li>
+                        <li class="">Photoshop</li>
+                        <li class="">Macromedia Flash 8</li>
                     </ul>                        
                 </div> 
 
@@ -457,20 +485,16 @@
 
 
 
-    <footer>
-            <ul>
+    <footer class="footer">
+            <ul class="footer_list">
                 <li><a class="footer_link" href="https://t.me/niiikitoshka" title="" target="_blank">Telegram</a></li>
                 <li><a class="footer_link" href="mailto:nikitamishkuro123@gmail.com" title="" target="_blank">Email</a></li>
                 <li><a class="footer_link" href="https://www.linkedin.com/in/nikita-mishkuro-b03657206/" title="" target="_blank">LinkedIn</a></li>
                 <!-- <li><a href="" title="" target="_blank">Facebook</a></li> -->
             </ul>
             <!-- сделать кнопочку при нажатии отображается график частоты использования соц сетей -->
-            <div class="footer_srcond-line">
-                <a id="button_PDFCV">
-                    My PDF CV
-                </a>
-                <span>Warsaw 2022</span>
-            </div>
+            <p>Warsaw 2022</p>
+
     </footer>
     <script src="JS/script.js"></script>
 </body>
