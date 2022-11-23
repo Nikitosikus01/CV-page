@@ -687,6 +687,45 @@ h2 img {
 /* section */
 
 
+.section_events {
+    
+}
+
+.section_events_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.section_events_list li {
+    text-decoration: none;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.section_events_list_link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    box-shadow: 3px 3px 6px 1px;
+    border-radius: 8px;
+    font-size: 19px;
+}
+.section_events_list_link:hover {
+    color: lightblue;
+    background: #000;
+
+}
+
+
+
+/* section */
+
+
 
 .soft_skills_block {
     display: flex;
