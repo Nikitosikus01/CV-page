@@ -30,7 +30,7 @@ h2{
     font-size: 25px;
     /* font-family:'Times New Roman', Times, serif; */
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 30px 5px rgb(100, 100, 100) inset;
+    box-shadow: 0px 0px 30px 5px rgb(145, 145, 145) inset;
 
     display: flex;
     justify-content: center;
@@ -381,11 +381,11 @@ h2 img {
     width: 300px;
     border-radius: 50%;
     margin: 30px;
-    transition: linear .7s;
+    transition: linear .5s;
 }
 .section_myinfo_motivation-block img:hover {
-    transition: linear .5s;
-    box-shadow: 0px 0px 5px 5px;
+    transition: linear .2s;
+    box-shadow: 0px 0px 5px 2px;
 }    
 
 
@@ -804,13 +804,7 @@ h2 img {
 .footer_link:hover{
     text-decoration: underline;
 }
-.footer_link img {
-    width: 30px;
-    height: 30px;
-}
-.footer_link img:hover {
-    background-color: #fff;
-}
+
 .footer p {
     margin: 0px;
     padding: 15px;
