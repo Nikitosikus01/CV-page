@@ -3,15 +3,27 @@
 
 const btnMobileMenu = document.getElementById('navbar_mobile-elements_button');
 const mobileMenu = document.getElementById('navbar_mobile-elements_links');
+const mobileMenuOtherSpace = document.getElementById('block_navbar_mobile-other_space');
 
 btnMobileMenu.addEventListener('click', () => {
     
     if(getComputedStyle(mobileMenu).display == 'none'){
         mobileMenu.style.display = 'block';
+        mobileMenuOtherSpace.style.display = 'block';
     } else {
         mobileMenu.style.display = 'none';
+        mobileMenuOtherSpace.style.display = 'none';
     }
 });
+
+mobileMenuOtherSpace.addEventListener('click', () => { 
+    if (mobileMenuOtherSpace.style.display == 'block') {
+        mobileMenuOtherSpace.style.display = 'none';
+        mobileMenu.style.display = 'none';
+    } 
+
+});
+
 
 
 const buttonContacts = document.getElementById('button_contacts');
@@ -29,26 +41,24 @@ buttonContacts.addEventListener('click', () => {
     if(getComputedStyle(modalWindowContacts).display == 'none'){
         modalWindowContacts.style.display = 'block';
     } 
-    // else {
-    //     modalWindowContacts.style.display = 'none';
-    // }
+    
 });
 
 buttonPDFCV.addEventListener('click', () => {
     if(getComputedStyle(modalWindowPDFCV).display == 'none'){
         modalWindowPDFCV.style.display = 'block';
     }
-})
+});
 
 // clouse modal window constants by cross
 buttonContactsCross.addEventListener('click', () => {
     modalWindowContacts.style.display = 'none';
-})
+});
 
 // clouse modal window PDF cv by cross
 buttonPDFCross.addEventListener('click', () => {
     modalWindowPDFCV.style.display = 'none';
-})
+});
 
 // clouse modal windows constants and PDF by clicking on an empty space
 window.onclick = (event) => { 
@@ -57,7 +67,7 @@ window.onclick = (event) => {
     } else if (event.target == modalWindowPDFCV) {
         modalWindowPDFCV.style.display = 'none';
     }
-}
+};
 
 
 const buttonOtherCards = document.getElementById('education_youtube_channel_title');
@@ -80,7 +90,7 @@ buttonOtherCards.addEventListener('click', () => {
         otherCards.style.display = 'none';
     }
 
-})
+});
 
 
 

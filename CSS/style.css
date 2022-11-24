@@ -110,7 +110,8 @@ h2 img {
 .navbar_mobile-elements_links ul {
     margin: 0;
     padding: 15px;
-    border-top: #fff solid 1px;
+    border-top: rgb(255, 255, 255) solid 1px;
+    border-bottom: rgb(0, 0, 0) solid 1px;
 
 }
 .navbar_mobile-elements_link {
@@ -129,6 +130,17 @@ h2 img {
     /* color: #000; */
     color: lightblue;
 }
+
+.block_navbar_mobile-other_space {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100vh;
+
+}
+/* .block_navbar_mobile-other_space:hover {
+    cursor: pointer;
+} */
+
 
 
 
