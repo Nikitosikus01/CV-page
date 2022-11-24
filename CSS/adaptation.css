@@ -334,4 +334,11 @@
         padding: 10px;
     }
 
+    .soft_skills_block-abilities_skills:nth-child(2){
+        display: none;
+    }    
+    .soft_skills_block-abilities_skills:nth-child(3){
+        display: block;
+    }
+    
 }
