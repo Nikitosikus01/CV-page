@@ -770,17 +770,17 @@ h2 img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 30px 20px 30px;
+    padding: 50px 30px 30px 30px;
     margin: 0;
 }
 .footer_list li {
     list-style-type: none;
+    margin: 5px 0px;
 }
 .footer_link {
     text-decoration: none;
     color: white;
-    padding: 15px;
-    margin: 10px 0px;
+    padding: 10px;
 }
 .footer_link:hover{
     color: lightblue;
