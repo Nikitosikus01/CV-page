@@ -804,6 +804,13 @@ h2 img {
 .footer_link:hover{
     text-decoration: underline;
 }
+.footer_link img {
+    width: 30px;
+    height: 30px;
+}
+.footer_link img:hover {
+    background-color: #fff;
+}
 .footer p {
     margin: 0px;
     padding: 15px;
