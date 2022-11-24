@@ -22,7 +22,7 @@
     }
 
     .header_blocks {
-        padding: 158px 0px 60px 0px;
+        padding: 218px 0px 60px 0px;
     }
 
 }
@@ -45,9 +45,6 @@
     .section_myinfo_motivation-block img {
         height: 250px;
         width: 250px;
-    }
-    .soft_skills_block-abilities {
-        flex-direction: column;
     }
     .tech_skills_block-languages_content-list {
         flex-direction: column;
@@ -94,8 +91,9 @@
     }
 
     .youtube_channel_card {
-        padding: 25px 15px;
-        margin: 0px 0px 20px 0px;
+        padding: 23px;
+        margin: 0px 5px 20px 5px;
+        max-height: 140px;
     }
     .youtube_channel_card img {
         width: 50px;
@@ -110,9 +108,12 @@
         font-weight: 500;
         font-size: 16px;
     }
+
+    .soft_skills_block-abilities {
+        flex-direction: column;
+    }
+
 }
-
-
 
 
 
@@ -120,8 +121,6 @@
 @media screen and (max-width: 700px) {
     
     
-
-
     .content_width {
         max-width: 90%;
     }
@@ -185,7 +184,9 @@
     .section_experience_info_work_link {
         font-size: 20px;
     }
-
+    .education_block {
+        padding: 40px 20px;
+    }
     .education_content_title {
         padding-bottom: 20px;
         font-size: 20px;
@@ -225,7 +226,6 @@
 
 
 
-
 @media screen and (max-width: 500px) {
     
     .content_width {
@@ -248,7 +248,7 @@
     }
 
     .education_block {
-        padding: 15px;
+        padding: 40px 15px;
     }
     .education_block:first-child {
         margin-top: 30px;
@@ -256,7 +256,7 @@
 
     .youtube_channel_card {
         box-sizing: border-box;
-        padding: 10px;
+        padding: 20px 15px;
     }
     .youtube_channel_card p {
         font-size: 15px;
@@ -267,10 +267,6 @@
         margin-top: 30px;
     }
 
-    .footer_city-year {
-        text-align: center;
-        font-size: 14px;
-    }
 }
 
 
@@ -310,7 +306,7 @@
     }
 
     .education_block {
-        padding: 10px;
+        padding: 40px 10px;
     }
     .education_content_sites_links a {
         padding: 7px 20px;
@@ -322,7 +318,7 @@
     }
 
     .tech_skills_block-languages {
-        padding: 10px;
+        padding: 40px 10px;
     }
     .tech_skills_block-languages li {
         padding: 8px;
@@ -334,7 +330,4 @@
         padding: 10px;
     }
 
-    .footer_srcond-line {
-        font-size: 15px;
-    }
 }

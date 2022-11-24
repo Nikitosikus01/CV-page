@@ -14,8 +14,6 @@ btnMobileMenu.addEventListener('click', () => {
 });
 
 
-
-
 const buttonContacts = document.getElementById('button_contacts');
 const modalWindowContacts = document.getElementById('backlayer_contacts');
 
