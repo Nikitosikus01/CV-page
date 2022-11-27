@@ -327,6 +327,7 @@ h2 img {
 
 
 
+
 .navbar{
     position: sticky;
     z-index: 5;
@@ -363,6 +364,7 @@ h2 img {
 
 
 
+
 .section_myinfo_content {
     width: 90%;
 }
@@ -395,6 +397,7 @@ h2 img {
     transition: linear .2s;
     box-shadow: 0px 0px 5px 2px;
 }    
+
 
 
 
@@ -473,7 +476,9 @@ h2 img {
 
 
 
+
 /* section */
+
 
 
 
@@ -522,7 +527,9 @@ h2 img {
 
 
 
+
 /* section */
+
 
 
 
@@ -687,6 +694,9 @@ h2 img {
 
 /* section */
 
+
+
+
 .section_events {
     padding: 40px 30px;
 }
@@ -708,7 +718,10 @@ h2 img {
     color: darkblue;
 }
 
+
+
 /* section */
+
 
 
 
@@ -756,7 +769,34 @@ h2 img {
 }
 
 
+
+
 /* section */
+
+
+.section_hobbies {
+    padding: 40px 30px;
+
+}
+
+
+
+
+
+
+
+/* section */
+
+
+
+
+
+
+
+
+
+/* section */
+
 
 
 
