@@ -699,24 +699,55 @@ h2 img {
 
 .section_events {
     padding: 40px 30px;
+    box-sizing: border-box;
+
 }
 .section_events_list {
+    display: flex;
+    height: 80vh;
+
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
+
 }
-.section_events_list li {
-    padding: 5px 0px;
+.section_events_list_card {
+    height: 70vh;
+    border-radius: 30px;
+    border-color: #000 solid 2px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 500ms ease-in-out;
 }
 .section_events_list_link {
+    
+    position:absolute;
+    opacity: 0;
+
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
-    color: #000;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
 }
 .section_events_list_link:hover {
     color: darkblue;
 }
+
+.section_events_list_card.active{
+    flex: 7;
+}
+.section_events_list_card.active a {
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.3s;
+}
+
 
 
 

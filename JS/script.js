@@ -119,4 +119,21 @@ buttonFictionBooks.addEventListener('click', () => {
 
 
 
+// events
+const slides = document.querySelectorAll('.section_events_list_card');
+
+for (const slide of slides ) {
+    slide.addEventListener('mouseover', () => {
+        clearActiveClasses();
+        slide.classList.add('active');
+    });
+}
+
+function clearActiveClasses(){
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+    });
+}
+
+
 
