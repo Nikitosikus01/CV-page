@@ -2,10 +2,22 @@
 
 
 
+@media screen and (min-width: 1250px){
+    .content_width {
+        max-width: 1250px;
+    }
+    .header{
+        height: 800px;
+    }
+    
+
+}
+
+
 
 @media screen and (max-width: 1250px) {
     .content_width {
-        max-width: 75%;
+        max-width: 84%;
     }
     .section_myinfo_motivation-block {
         flex-direction: column;
@@ -35,7 +47,7 @@
     
 
     .content_width {
-        max-width: 80%;
+        max-width: 86%;
     }
     
     .navbar_link {
@@ -63,7 +75,7 @@
 
 
     .content_width {
-        max-width: 85%;
+        max-width: 88%;
     }
 
     .modal-window_contacts {
