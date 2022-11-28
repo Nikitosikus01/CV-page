@@ -234,6 +234,14 @@
         font-size: 20px;
     }
 
+
+    .section_hobbies_sports-container {
+        display: none;
+    }
+    .section_hobbies_sports-container_mobile {
+        display: block;
+    }
+
 }
 
 

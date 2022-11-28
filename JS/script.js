@@ -120,6 +120,55 @@ buttonFictionBooks.addEventListener('click', () => {
 
 
 // events
+
+
+
+
+
+
+
+
+
+
+// sports
+
+
+
+const buttonHobbies = document.getElementById('section_hobbies_title');
+const otherHobbiesCards = document.getElementById('section_hobbies_sports-container');
+const otherHobbiesCardsMobile = document.getElementById('section_hobbies_sports-container_mobile');
+const hobbiesTitleSymbol = document.getElementById('section_hobbies_title_symbol');
+
+
+buttonHobbies.addEventListener('click', () => {
+    // change + to -
+
+    if (getComputedStyle(otherHobbiesCards).display == 'none' && getComputedStyle(otherHobbiesCardsMobile).display == 'block') {
+        buttonHobbies.id.remove();
+    }
+
+    if (hobbiesTitleSymbol.textContent == '+') {
+        hobbiesTitleSymbol.innerHTML = '-';
+    } else {
+        hobbiesTitleSymbol.innerHTML = '+';
+    }
+
+    if (getComputedStyle(otherHobbiesCards).display == 'none'){
+        otherHobbiesCards.style.display = 'flex';
+    } else {
+        otherHobbiesCards.style.display = 'none';
+    }
+
+    // if (getComputedStyle(otherHobbiesCards).display == 'none' && getComputedStyle(otherHobbiesCardsMobile).display == 'none'){
+    //     otherHobbiesCardsMobile.style.display = 'block';    
+    // } else {
+    //     otherHobbiesCardsMobile.style.display = 'none';
+    // }
+
+});
+
+
+// sports cards
 const slides = document.querySelectorAll('.section_hobbies_sports-container_slide');
 
 for (const slide of slides ) {
@@ -134,6 +183,11 @@ function clearActiveClasses(){
         slide.classList.remove('active');
     });
 }
+
+
+
+
+// 
 
 
 
