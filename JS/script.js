@@ -120,7 +120,7 @@ buttonFictionBooks.addEventListener('click', () => {
 
 
 // events
-const slides = document.querySelectorAll('.section_events_list_card');
+const slides = document.querySelectorAll('.section_hobbies_sports-container_slide');
 
 for (const slide of slides ) {
     slide.addEventListener('mouseover', () => {
