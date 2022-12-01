@@ -34,7 +34,7 @@
     }
 
     .header_blocks {
-        padding: 218px 0px 60px 0px;
+        padding: 188px 0px 60px 0px;
     }
 
 }
@@ -97,6 +97,11 @@
         color: rgb(255, 255, 255);
         box-shadow: 350px 0 0 0 rgb(0, 0, 0) inset;
     }
+
+    .header_blocks {
+        padding: 138px 0px 60px 0px;
+    }
+
 
     .tech_skills_block-languages_list {
         flex-direction: column;
@@ -171,6 +176,11 @@
         flex-direction: column;
         margin: 20px 0px;
     }
+
+    .header_blocks {
+        padding: 98px 0px 60px 0px;
+    }
+
 
     .paragraph_name {
         font-size: 20px;
