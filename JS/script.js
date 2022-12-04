@@ -3,26 +3,28 @@
 
 const btnMobileMenu = document.getElementById('navbar_mobile-elements_button');
 const mobileMenu = document.getElementById('navbar_mobile-elements_links');
-const mobileMenuOtherSpace = document.getElementById('block_navbar_mobile-other_space');
 
 btnMobileMenu.addEventListener('click', () => {
     
     if(getComputedStyle(mobileMenu).display == 'none'){
         mobileMenu.style.display = 'block';
-        mobileMenuOtherSpace.style.display = 'block';
     } else {
         mobileMenu.style.display = 'none';
-        mobileMenuOtherSpace.style.display = 'none';
     }
 });
 
-mobileMenuOtherSpace.addEventListener('click', () => { 
-    if (mobileMenuOtherSpace.style.display == 'block') {
-        mobileMenuOtherSpace.style.display = 'none';
-        mobileMenu.style.display = 'none';
-    } 
 
-});
+const mobileMenuLinkCollection = document.getElementsByClassName('navbar_mobile-elements_link')
+
+for(let i = 0; i < mobileMenuLinkCollection.length; i++){
+    mobileMenuLinkCollection[i].addEventListener('click', () => {
+    
+        if(getComputedStyle(mobileMenu).display == 'block'){
+            mobileMenu.style.display = 'none';
+        } 
+    });
+}
+
 
 
 
@@ -34,7 +36,6 @@ const modalWindowPDFCV = document.getElementById('backlayer_PDF');
 
 const buttonContactsCross = document.getElementById('button_contacts_cross');
 const buttonPDFCross = document.getElementById('button_PDF_cross');
-
 
 // open modal window
 buttonContacts.addEventListener('click', () => {

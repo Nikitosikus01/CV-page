@@ -128,10 +128,10 @@ h2 img {
     color: lightblue;
 }
 
-.block_navbar_mobile-other_space {
+/* .block_navbar_mobile-other_space {
     display: none;
     height: 100vh;
-}
+} */
 
 
 
@@ -549,7 +549,7 @@ h2 img {
     color: #000;
     font-style: italic;
     text-decoration: none;
-    
+
 }
 .education_content_title_link:hover {
     color: darkblue;
